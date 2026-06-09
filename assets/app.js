@@ -114,6 +114,7 @@ function renderCards() {
         <span class="badge ${confidenceClass(project.softwareConfidence)}">${project.softwareConfidence}</span>
       </div>
       <div class="meta-line">${project.school} / ${project.category} / ${project.rocYear} 年</div>
+      <div class="meta-line">來源：${sourceLabel(project)}</div>
       <p class="concept-line">${project.implementationConcept}</p>
     </button>
   `).join("");

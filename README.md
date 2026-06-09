@@ -11,7 +11,7 @@
 - 可軟體實作候選：66 筆
 - 已建立原型 repo：4 筆
 
-## 官方來源
+## 比賽來源與官方來源
 
 - U-start 歷年補助名單：https://ustart.yda.gov.tw/p/412-1000-147.php?Lang=zh-tw
 - 110 年度第二階段績優團隊：https://ustart.yda.gov.tw/p/405-1000-1783,c147.php?Lang=zh-tw
