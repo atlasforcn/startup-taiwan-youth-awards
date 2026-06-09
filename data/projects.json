@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T21:22:05.989Z",
+  "generatedAt": "2026-06-09T21:32:14.067Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫近五年（110-114）第二階段績優團隊。Young 飛類型先保留為待查來源。",
   "competitions": [
     {
@@ -48,14 +48,46 @@
       "sourceListUrl": "",
       "sourceUrls": [],
       "dataStatus": "待補官方來源；不先臆造得獎名單。"
+    },
+    {
+      "id": "user-concepts",
+      "name": "使用者補充概念",
+      "organizer": "使用者補充",
+      "type": "待查：尚未連結正式創業競賽或獎項來源。",
+      "yearsCovered": [],
+      "sourceListUrl": "",
+      "sourceUrls": [],
+      "dataStatus": "概念已納入原型清單；待補官方競賽來源與屆次。"
     }
   ],
   "summary": {
-    "projectCount": 110,
-    "softwareCandidateCount": 65,
-    "prototypeCount": 3
+    "projectCount": 111,
+    "softwareCandidateCount": 66,
+    "prototypeCount": 4
   },
   "projects": [
+    {
+      "id": "user-concept-shared-fashion-platform",
+      "competitionId": "user-concepts",
+      "competitionName": "使用者補充概念",
+      "organizer": "使用者補充",
+      "rocYear": "待查",
+      "calendarYear": null,
+      "round": "待查：尚未連結創業競賽屆次",
+      "school": "待查",
+      "team": "台灣共享時尚平台",
+      "company": "",
+      "category": "循環時尚 / 共享經濟",
+      "awardAmountTenThousandNtd": null,
+      "southboundBonusTenThousandNtd": null,
+      "sourceUrl": "",
+      "sourceReliability": "user-supplied-concept",
+      "softwareCandidate": true,
+      "softwareConfidence": "明確",
+      "implementationConcept": "讓有衣服的人把不常穿的衣服出租，讓更多人以租借方式享受時尚流通；核心流程包含衣櫥上架、租期管理、押金/清潔規則、評價信任與循環效益追蹤。",
+      "prototypeRepo": "../prototype-shared-fashion-platform",
+      "notes": "使用者補充概念，尚未對應到正式創業競賽獎項來源。"
+    },
     {
       "id": "ustart-114-01-takeitlab-拿趣實驗室",
       "competitionId": "ustart",

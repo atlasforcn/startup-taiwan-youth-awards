@@ -7,9 +7,9 @@
 - 競賽：U-start 創新創業計畫
 - 主辦：教育部青年發展署
 - 屆次：110、111、112、113、114 年度第二階段績優團隊
-- 收錄：110 筆作品
-- 可軟體實作候選：65 筆
-- 已建立原型 repo：3 筆
+- 收錄：111 筆作品
+- 可軟體實作候選：66 筆
+- 已建立原型 repo：4 筆
 
 ## 官方來源
 
@@ -31,6 +31,7 @@
 - `prototype-notex-marketplace`：依 114 年 U-start `NoteX 筆記市集` 做出的筆記交易/學習資源市集。
 - `prototype-internship-match`：依 114 年 U-start `實習通` 做出的實習媒合管理平台。
 - `prototype-rag-semiconductor-workbench`：依 114 年 U-start `RAGtimAIze 半導體智慧模組串接平台` 做出的 RAG 模組工作台。
+- `prototype-shared-fashion-platform`：依使用者補充概念做出的台灣共享時尚/服飾租借平台；獎項來源與屆次待查。
 
 ## Young 飛狀態
 

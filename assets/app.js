@@ -42,6 +42,11 @@ function uniqueSorted(items) {
   return [...new Set(items.filter(Boolean))].sort((a, b) => String(b).localeCompare(String(a), "zh-Hant"));
 }
 
+function sourceLink(project, label = "官方來源") {
+  if (!project.sourceUrl) return `<span class="meta-line">來源待查</span>`;
+  return `<a href="${project.sourceUrl}" target="_blank" rel="noreferrer">${label}</a>`;
+}
+
 function setupFilters() {
   const years = uniqueSorted(state.dataset.projects.map((p) => p.rocYear));
   const categories = uniqueSorted(state.dataset.projects.map((p) => p.category));
@@ -132,7 +137,7 @@ function renderTable() {
       <td>${project.school}</td>
       <td>${project.category}</td>
       <td><span class="badge ${confidenceClass(project.softwareConfidence)}">${project.softwareCandidate ? project.softwareConfidence : "待查"}</span></td>
-      <td><a href="${project.sourceUrl}" target="_blank" rel="noreferrer">官方來源</a></td>
+      <td>${sourceLink(project)}</td>
     </tr>
   `).join("");
 
@@ -166,7 +171,7 @@ function renderDetail() {
       <div class="detail-item"><span>獎補助</span><strong>${selected.awardAmountTenThousandNtd || "待查"} 萬元</strong></div>
     </div>
     ${prototype}
-    <a href="${selected.sourceUrl}" target="_blank" rel="noreferrer">官方得獎名單</a>
+    ${sourceLink(selected, "官方得獎名單")}
   `;
 }
 
