@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>台灣大學創業競賽作品整理系統</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="篩選器">
+        <div class="brand">
+          <span class="brand-mark">YS</span>
+          <div>
+            <p>整理系統</p>
+            <h1>青年創業競賽作品庫</h1>
+          </div>
+        </div>
+
+        <label class="field">
+          <span>搜尋</span>
+          <input id="searchInput" type="search" placeholder="團隊、公司、學校、概念">
+        </label>
+
+        <label class="field">
+          <span>年度</span>
+          <select id="yearFilter">
+            <option value="all">全部年度</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>類別</span>
+          <select id="categoryFilter">
+            <option value="all">全部類別</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>實作信心</span>
+          <select id="confidenceFilter">
+            <option value="all">全部信心</option>
+            <option value="明確">明確</option>
+            <option value="推測">推測</option>
+            <option value="待查">待查</option>
+          </select>
+        </label>
+
+        <label class="toggle">
+          <input id="softwareOnly" type="checkbox" checked>
+          <span>只看可軟體實作</span>
+        </label>
+
+        <div class="source-box">
+          <p class="eyebrow">資料來源</p>
+          <strong>U-start 110-114 年</strong>
+          <span>第二階段績優團隊，官方頁面整理。</span>
+          <a href="https://ustart.yda.gov.tw/p/412-1000-147.php?Lang=zh-tw" target="_blank" rel="noreferrer">開啟官方名單</a>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <section class="topbar">
+          <div>
+            <p class="eyebrow">Taiwan youth startup competition atlas</p>
+            <h2>把近五年大學創業競賽作品，整理成可以追蹤、篩選、原型化的資料庫。</h2>
+          </div>
+          <div class="status-pill" id="generatedAt">資料讀取中</div>
+        </section>
+
+        <section class="metrics" aria-label="統計摘要">
+          <article>
+            <span>收錄作品</span>
+            <strong id="metricProjects">0</strong>
+          </article>
+          <article>
+            <span>可軟體化</span>
+            <strong id="metricSoftware">0</strong>
+          </article>
+          <article>
+            <span>已開原型</span>
+            <strong id="metricPrototypes">0</strong>
+          </article>
+          <article>
+            <span>官方年度</span>
+            <strong id="metricYears">0</strong>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel shortlist">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Implementation queue</p>
+                <h3>可實作作品</h3>
+              </div>
+              <span id="resultCount">0 筆</span>
+            </div>
+            <div id="projectCards" class="project-cards"></div>
+          </div>
+
+          <div class="panel detail-panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Selected concept</p>
+                <h3>作品理解</h3>
+              </div>
+            </div>
+            <div id="projectDetail" class="detail-empty">
+              選取一個作品後，這裡會顯示獎項來源、屆次、核心概念與原型狀態。
+            </div>
+          </div>
+        </section>
+
+        <section class="panel table-panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Full registry</p>
+              <h3>完整整理表</h3>
+            </div>
+            <button id="exportButton" class="ghost-button" type="button">匯出目前篩選</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>年度</th>
+                  <th>作品</th>
+                  <th>學校</th>
+                  <th>類別</th>
+                  <th>軟體化</th>
+                  <th>來源</th>
+                </tr>
+              </thead>
+              <tbody id="projectTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
