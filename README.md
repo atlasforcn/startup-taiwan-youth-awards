@@ -13,7 +13,8 @@
 
 ## GitHub 分類命名
 
-- 主整理網站 repo：`startup-taiwan-youth-awards`
+- GitHub owner：`atlasforcn`；目前先以 private repo 建立，避免未確認前公開。
+- 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
 - 建議 GitHub topic：`taiwan-startup-awards`、`startup-prototype`、`youth-startup`，並依來源加上 `ustart`、`youngfly`、`fiti` 等 topic。
 

@@ -348,6 +348,12 @@ a:hover {
   border: 1px solid #d3ddda;
 }
 
+.badge-github {
+  color: #12201c;
+  background: #c8f06f;
+  border: 1px solid #a7cf4d;
+}
+
 .meta-line {
   color: var(--muted);
   font-size: 13px;
@@ -411,6 +417,12 @@ a:hover {
   line-height: 1.35;
 }
 
+.prototype-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .prototype-link,
 .ghost-button {
   display: inline-flex;
@@ -424,6 +436,18 @@ a:hover {
   border-radius: 8px;
   font-weight: 850;
   cursor: pointer;
+}
+
+.prototype-link.secondary {
+  color: var(--ink);
+  background: #c8f06f;
+  border-color: #a7cf4d;
+}
+
+.prototype-links-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .prototype-table-link {

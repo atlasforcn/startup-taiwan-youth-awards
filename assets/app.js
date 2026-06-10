@@ -154,7 +154,10 @@ function renderTable() {
       <td><span class="badge ${confidenceClass(project.softwareConfidence)}">${project.softwareCandidate ? project.softwareConfidence : "待查"}</span></td>
       <td>
         ${project.prototypeRepo
-          ? `<a class="prototype-table-link" href="${project.prototypeRepo}/index.html"><span class="badge badge-prototype">已開原型</span></a>`
+          ? `<span class="prototype-links-inline">
+              <a class="prototype-table-link" href="${project.prototypeRepo}/index.html"><span class="badge badge-prototype">本機原型</span></a>
+              ${project.githubRepo ? `<a class="prototype-table-link" href="${project.githubRepo}" target="_blank" rel="noreferrer"><span class="badge badge-github">GitHub</span></a>` : ""}
+            </span>`
           : `<span class="badge badge-prototype-pending">待開原型</span>`}
       </td>
       <td>${sourceLink(project)}</td>
@@ -174,7 +177,10 @@ function renderDetail() {
   state.selectedId = selected.id;
 
   const prototype = selected.prototypeRepo
-    ? `<a class="prototype-link" href="${selected.prototypeRepo}/index.html">開啟原型 repo</a>`
+    ? `<div class="prototype-actions">
+        <a class="prototype-link" href="${selected.prototypeRepo}/index.html">開啟本機原型</a>
+        ${selected.githubRepo ? `<a class="prototype-link secondary" href="${selected.githubRepo}" target="_blank" rel="noreferrer">GitHub repo</a>` : ""}
+      </div>`
     : `<span class="meta-line">尚未開原型 repo，已列入候選清單。</span>`;
 
   els.detail.className = "detail-body";
