@@ -1,15 +1,15 @@
 # 台灣大學創業競賽作品整理系統
 
-這個 repo 是大學/青年創業競賽作品的整理網站。目前收錄教育部青年發展署 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、數位發展部數位產業署創業歸故里驗證輔導計畫、國科會 FITI 創新創業激勵計畫，以及教育部大專校院創新創業實戰模擬學習平臺近年官方績優/得獎/成功案例團隊，並標記哪些作品適合先做成軟體原型。
+這個 repo 是大學/青年創業競賽作品的整理網站。目前收錄教育部青年發展署 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、數位發展部數位產業署創業歸故里驗證輔導計畫、國科會 FITI 創新創業激勵計畫、教育部大專校院創新創業實戰模擬學習平臺，以及全國大專校院 Healthy x Happy 創新創業競賽近年官方績優/得獎/成功案例團隊，並標記哪些作品適合先做成軟體原型。
 
 ## 已整理範圍
 
-- 競賽：U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺
-- 主辦：教育部青年發展署、數位發展部數位產業署、國家科學及技術委員會 / 國家實驗研究院科技政策研究與資訊中心
+- 競賽：U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺、Healthy x Happy 創新創業競賽
+- 主辦：教育部青年發展署、數位發展部數位產業署、國家科學及技術委員會 / 國家實驗研究院科技政策研究與資訊中心、國立臺北護理健康大學育成中心
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
-- 收錄：518 筆作品
-- 可軟體實作候選：353 筆
-- 已建立原型 repo：11 筆
+- 收錄：574 筆作品
+- 可軟體實作候選：379 筆
+- 已建立原型 repo：12 筆
 
 ## 比賽來源與官方來源
 
@@ -53,6 +53,11 @@
 - 實戰模擬平臺 112 年成功案例：https://ssp.moe.gov.tw/cases?type=success&year=112
 - 實戰模擬平臺 113 年成功案例：https://ssp.moe.gov.tw/cases?type=success&year=113
 - 實戰模擬平臺 114 年成功案例：https://ssp.moe.gov.tw/cases?type=success&year=114
+- Healthy x Happy 2021 得獎公告：https://incubation.ntunhs.edu.tw/tab/528/id/1409
+- Healthy x Happy 2022 獲獎公告：https://incubation.ntunhs.edu.tw/tab/528/id/1508
+- Healthy x Happy 2023 第七屆決賽獲獎名單：https://incubation.ntunhs.edu.tw/tab/528/id/1600
+- Healthy x Happy 2024 第八屆決賽獲獎名單：https://incubation.ntunhs.edu.tw/tab/528/id/1728
+- Healthy x Happy 2025 第九屆決賽獲獎名單：https://incubation.ntunhs.edu.tw/tab/528/id/1834
 
 ## 資料判斷規則
 
@@ -73,6 +78,7 @@
 - `prototype-nexai-farm-market`：依 114 年創業歸故里 `農場到市場 AI：基於 LINE 的農民銷售與行銷助理` 做出的農民銷售 AI 助理。
 - `prototype-anivance-ai-biochip`：依 112 年 FITI `Anivance AI` 做出的仿生晶片與 AI 生物分析工作台。
 - `prototype-pawmunity-care`：依 114 年大專校院創新創業實戰模擬學習平臺 `Pawmunity寵物共養社群系統` 做出的寵物共養照護媒合平台。
+- `prototype-emoto-support-platform`：依 114 年 Healthy x Happy `情緒零時差：Emoto 線上心理支持平台` 做出的情緒支持媒合與追蹤平台。
 
 ## Young 飛資料說明
 
@@ -89,6 +95,10 @@ FITI 官方新聞以梯次決選暨頒獎典禮為主。本資料庫先收錄 11
 ## 實戰模擬平臺資料說明
 
 大專校院創新創業實戰模擬學習平臺公開頁面以提案總覽與成功案例呈現，欄位包含年度、梯次、領域、學校、團隊、提案內容、教練注資額與民眾注資額。本資料庫先收錄官方成功案例頁目前可篩選的 111-114 年資料；因官方頁面未提供 110 年成功案例篩選選項，110 年暫不收錄。
+
+## Healthy x Happy 資料說明
+
+Healthy x Happy 官方頁面列出 2021-2025 年決賽得獎/獲獎名單，欄位以獎項、團隊名稱與作品名稱為主。本資料庫先保守收錄官方可確認欄位；學校、隊員、完整計畫書與商業模式細節待後續補查。
 
 ## 使用方式
 
