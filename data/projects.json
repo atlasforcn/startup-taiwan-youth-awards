@@ -747,7 +747,8 @@
       "implementationConcept": "農場到市場 AI：基於 LINE 的農民銷售與行銷助理：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
       "prototypeRepo": "../startup-nexai-farm-market",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。",
-      "githubRepo": "https://github.com/atlasforcn/startup-nexai-farm-market"
+      "githubRepo": "https://github.com/atlasforcn/startup-nexai-farm-market",
+      "demoUrl": "https://atlasforcn.github.io/startup-nexai-farm-market/"
     },
     {
       "id": "sccontest-114-21-嘉學社會企業有限公司",
@@ -2574,7 +2575,8 @@
       "implementationConcept": "AI 生物分析平台：管理器官晶片實驗、影像/感測資料、AI 分析結果、藥物反應比較與實驗報告。",
       "prototypeRepo": "../startup-anivance-ai-biochip",
       "notes": "人體仿生器官晶片、3D 仿生組織、動態氣霧呼吸系統、自動化分析和 AI 技術。",
-      "githubRepo": "https://github.com/atlasforcn/startup-anivance-ai-biochip"
+      "githubRepo": "https://github.com/atlasforcn/startup-anivance-ai-biochip",
+      "demoUrl": "https://atlasforcn.github.io/startup-anivance-ai-biochip/"
     },
     {
       "id": "fiti-112-1-19-micts",
@@ -3719,7 +3721,8 @@
       "implementationConcept": "寵物共養社群系統：媒合飼主與可信任照護者，管理照護需求、PawScore 信任評分、Hub 安心中心與照護紀錄。",
       "prototypeRepo": "../startup-pawmunity-care",
       "notes": "官方成功案例頁列出團隊「Pawmunity」；教練注資額 6,600,000、民眾注資額 2,331,000、總創新幣 8,931,000。",
-      "githubRepo": "https://github.com/atlasforcn/startup-pawmunity-care"
+      "githubRepo": "https://github.com/atlasforcn/startup-pawmunity-care",
+      "demoUrl": "https://atlasforcn.github.io/startup-pawmunity-care/"
     },
     {
       "id": "ssp-114-02-1676-pingpro-—-ai-桌球訓練輔助系統",
@@ -6932,7 +6935,8 @@
       "implementationConcept": "線上心理支持平台：情緒狀態登記、匿名支持媒合、諮詢/陪伴時段、危機分流與支持成效追蹤。",
       "prototypeRepo": "../startup-emoto-support-platform",
       "notes": "官方得獎名單列出團隊「Emoto」、作品「情緒零時差：Emoto 線上心理支持平台」；獎項為佳作獎，禮券 0.3 萬元。",
-      "githubRepo": "https://github.com/atlasforcn/startup-emoto-support-platform"
+      "githubRepo": "https://github.com/atlasforcn/startup-emoto-support-platform",
+      "demoUrl": "https://atlasforcn.github.io/startup-emoto-support-platform/"
     },
     {
       "id": "healthyhappy-114-08-footure-footanalyzer-智慧足鞋量測之分析系統",
@@ -8033,7 +8037,8 @@
       "implementationConcept": "讓有衣服的人把不常穿的衣服出租，讓更多人以租借方式享受時尚流通；核心流程包含衣櫥上架、租期管理、押金/清潔規則、評價信任與循環效益追蹤。",
       "prototypeRepo": "../startup-shared-fashion-platform",
       "notes": "使用者補充概念，尚未對應到正式創業競賽獎項來源。",
-      "githubRepo": "https://github.com/atlasforcn/startup-shared-fashion-platform"
+      "githubRepo": "https://github.com/atlasforcn/startup-shared-fashion-platform",
+      "demoUrl": "https://atlasforcn.github.io/startup-shared-fashion-platform/"
     },
     {
       "id": "youngfly-114-01-天下茶航",
@@ -8839,7 +8844,8 @@
       "implementationConcept": "共乘媒合平台：用路線、時段、信任評價與費用分攤，協助青年把共享交通行動數位化。",
       "prototypeRepo": "../startup-youngfly-carpool",
       "notes": "Young 飛官方附件僅列團隊名稱、獎項與獎金；學校、公司與完整方案內容需另查成果頁或團隊資料。",
-      "githubRepo": "https://github.com/atlasforcn/startup-youngfly-carpool"
+      "githubRepo": "https://github.com/atlasforcn/startup-youngfly-carpool",
+      "demoUrl": "https://atlasforcn.github.io/startup-youngfly-carpool/"
     },
     {
       "id": "youngfly-112-36-刺繡故事屋",
@@ -10190,7 +10196,8 @@
       "implementationConcept": "個人安全資訊服務：以行程、警示、緊急聯絡與定位紀錄支援獨行者。",
       "prototypeRepo": "../startup-alonesafe-companion",
       "notes": "",
-      "githubRepo": "https://github.com/atlasforcn/startup-alonesafe-companion"
+      "githubRepo": "https://github.com/atlasforcn/startup-alonesafe-companion",
+      "demoUrl": "https://atlasforcn.github.io/startup-alonesafe-companion/"
     },
     {
       "id": "ustart-114-08-ragtimaize-半導體智慧模組串接平台",
@@ -10213,7 +10220,8 @@
       "implementationConcept": "半導體智慧模組串接平台：整理模組、文件與問答流程，讓工程團隊快速建立 RAG 工作流程。",
       "prototypeRepo": "../startup-rag-semiconductor-workbench",
       "notes": "",
-      "githubRepo": "https://github.com/atlasforcn/startup-rag-semiconductor-workbench"
+      "githubRepo": "https://github.com/atlasforcn/startup-rag-semiconductor-workbench",
+      "demoUrl": "https://atlasforcn.github.io/startup-rag-semiconductor-workbench/"
     },
     {
       "id": "ustart-114-09-科技萌寵-gene-mon",
@@ -10302,7 +10310,8 @@
       "implementationConcept": "實習媒合平台：學生履歷、職缺條件、面試進度與校方追蹤。",
       "prototypeRepo": "../startup-internship-match",
       "notes": "",
-      "githubRepo": "https://github.com/atlasforcn/startup-internship-match"
+      "githubRepo": "https://github.com/atlasforcn/startup-internship-match",
+      "demoUrl": "https://atlasforcn.github.io/startup-internship-match/"
     },
     {
       "id": "ustart-114-13-boringai",
@@ -10325,7 +10334,8 @@
       "implementationConcept": "AI 工作流平台：用任務看板、提示詞版本、模型比較與成效紀錄管理 AI 服務。",
       "prototypeRepo": "../startup-boringai-workflow",
       "notes": "",
-      "githubRepo": "https://github.com/atlasforcn/startup-boringai-workflow"
+      "githubRepo": "https://github.com/atlasforcn/startup-boringai-workflow",
+      "demoUrl": "https://atlasforcn.github.io/startup-boringai-workflow/"
     },
     {
       "id": "ustart-114-14-synmove-新移動",
@@ -10458,7 +10468,8 @@
       "implementationConcept": "筆記市集：學生上架、搜尋、評價與交易學習筆記。",
       "prototypeRepo": "../startup-notex-marketplace",
       "notes": "",
-      "githubRepo": "https://github.com/atlasforcn/startup-notex-marketplace"
+      "githubRepo": "https://github.com/atlasforcn/startup-notex-marketplace",
+      "demoUrl": "https://atlasforcn.github.io/startup-notex-marketplace/"
     },
     {
       "id": "ustart-114-20-北方桌遊設計",
@@ -10657,7 +10668,8 @@
       "implementationConcept": "醫療教育平台：課程、題庫、學習進度與師生互動。",
       "prototypeRepo": "../startup-medical-line-education",
       "notes": "",
-      "githubRepo": "https://github.com/atlasforcn/startup-medical-line-education"
+      "githubRepo": "https://github.com/atlasforcn/startup-medical-line-education",
+      "demoUrl": "https://atlasforcn.github.io/startup-medical-line-education/"
     },
     {
       "id": "ustart-113-01-復癒生醫",
@@ -12638,7 +12650,8 @@
       "implementationConcept": "文化路線與體驗預約平台：把部落故事、路線、主理人、預約、評價與地方收益串成一個可營運的線上服務。",
       "prototypeRepo": "../startup-idjalan-cultural-routes",
       "notes": "",
-      "githubRepo": "https://github.com/atlasforcn/startup-idjalan-cultural-routes"
+      "githubRepo": "https://github.com/atlasforcn/startup-idjalan-cultural-routes",
+      "demoUrl": "https://atlasforcn.github.io/startup-idjalan-cultural-routes/"
     },
     {
       "id": "ustart-indigenous-113-04-山澗戶外",

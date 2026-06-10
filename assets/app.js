@@ -39,6 +39,11 @@ function prototypeClass(project) {
   return project.prototypeRepo ? "badge-prototype" : "badge-prototype-pending";
 }
 
+function demoLink(project) {
+  if (project.demoUrl) return project.demoUrl;
+  return project.prototypeRepo ? `${project.prototypeRepo}/index.html` : "";
+}
+
 function displayName(project) {
   return project.team || project.company || "未命名作品";
 }
@@ -155,7 +160,7 @@ function renderTable() {
       <td>
         ${project.prototypeRepo
           ? `<span class="prototype-links-inline">
-              <a class="prototype-table-link" href="${project.prototypeRepo}/index.html"><span class="badge badge-prototype">本機原型</span></a>
+              <a class="prototype-table-link" href="${demoLink(project)}" target="_blank" rel="noreferrer"><span class="badge badge-prototype">Demo</span></a>
               ${project.githubRepo ? `<a class="prototype-table-link" href="${project.githubRepo}" target="_blank" rel="noreferrer"><span class="badge badge-github">GitHub</span></a>` : ""}
             </span>`
           : `<span class="badge badge-prototype-pending">待開原型</span>`}
@@ -178,7 +183,7 @@ function renderDetail() {
 
   const prototype = selected.prototypeRepo
     ? `<div class="prototype-actions">
-        <a class="prototype-link" href="${selected.prototypeRepo}/index.html">開啟本機原型</a>
+        <a class="prototype-link" href="${demoLink(selected)}" target="_blank" rel="noreferrer">開啟 Demo</a>
         ${selected.githubRepo ? `<a class="prototype-link secondary" href="${selected.githubRepo}" target="_blank" rel="noreferrer">GitHub repo</a>` : ""}
       </div>`
     : `<span class="meta-line">尚未開原型 repo，已列入候選清單。</span>`;

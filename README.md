@@ -10,12 +10,15 @@
 - 收錄：574 筆作品
 - 可軟體實作候選：379 筆
 - 已建立原型 repo：13 筆
+- GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；目前先以 private repo 建立，避免未確認前公開。
+- GitHub owner：`atlasforcn`；主網站與 13 個 demo repo 皆已公開，以支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
+- 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
+- 原型 demo Pages：`https://atlasforcn.github.io/startup-xxxxx/`
 - 建議 GitHub topic：`taiwan-startup-awards`、`startup-prototype`、`youth-startup`，並依來源加上 `ustart`、`youngfly`、`fiti` 等 topic。
 
 ## 比賽來源與官方來源
