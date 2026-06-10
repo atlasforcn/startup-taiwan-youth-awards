@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T11:34:34.544Z",
+  "generatedAt": "2026-06-10T14:33:34.536Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -305,7 +305,7 @@
   "summary": {
     "projectCount": 574,
     "softwareCandidateCount": 379,
-    "prototypeCount": 13
+    "prototypeCount": 16
   },
   "projects": [
     {
@@ -436,9 +436,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "船長帶路-智慧平台：可實作為線上平台或管理系統，包含使用者流程、資料看板、媒合/預約、紀錄追蹤與成果分析。",
-      "prototypeRepo": null,
-      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
+      "implementationConcept": "船長帶路-智慧平台：基隆地方體驗預約與營運平台，整合航線目錄、船長排班、旅客預約、候補管理與地方導流成效。",
+      "prototypeRepo": "../startup-captain-guide-platform",
+      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。",
+      "githubRepo": "https://github.com/atlasforcn/startup-captain-guide-platform",
+      "demoUrl": "https://atlasforcn.github.io/startup-captain-guide-platform/"
     },
     {
       "id": "sccontest-114-07-研宇宙科技-股-有限公司",
@@ -2882,9 +2884,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "銀髮社交 App：唱歌房、Call-in、聊天室、安全互動與陪伴紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「友伴」；教練注資額 4,730,000、民眾注資額 2,220,000、總創新幣 6,950,000。"
+      "implementationConcept": "銀髮社交 App：參考官方案例頁公開介面方向，提供大字大按鈕、唱歌房、點歌、Call-in、聊天室、安全互動與陪伴紀錄。",
+      "prototypeRepo": "../startup-youbuddy-singing-social",
+      "notes": "官方成功案例頁列出團隊「友伴」；教練注資額 4,730,000、民眾注資額 2,220,000、總創新幣 6,950,000。",
+      "githubRepo": "https://github.com/atlasforcn/startup-youbuddy-singing-social",
+      "demoUrl": "https://atlasforcn.github.io/startup-youbuddy-singing-social/"
     },
     {
       "id": "ssp-114-01-1448-全域哨兵-vora-您的第二雙眼睛",
@@ -3102,9 +3106,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "ClearWay 救護車預警 App：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「ClearWay」；教練注資額 6,550,000、民眾注資額 5,045,000、總創新幣 11,595,000。"
+      "implementationConcept": "ClearWay 救護車預警 App：急救調度與交通預警中控，管理救護車任務、路口清空、駕駛通知、醫院交接與事件紀錄。",
+      "prototypeRepo": "../startup-clearway-ambulance-alert",
+      "notes": "官方成功案例頁列出團隊「ClearWay」；教練注資額 6,550,000、民眾注資額 5,045,000、總創新幣 11,595,000。",
+      "githubRepo": "https://github.com/atlasforcn/startup-clearway-ambulance-alert",
+      "demoUrl": "https://atlasforcn.github.io/startup-clearway-ambulance-alert/"
     },
     {
       "id": "ssp-114-01-1387-icf智慧ai復健系統",

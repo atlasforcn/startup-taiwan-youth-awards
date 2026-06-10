@@ -9,12 +9,12 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品
 - 可軟體實作候選：379 筆
-- 已建立原型 repo：13 筆
+- 已建立原型 repo：16 筆
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 13 個 demo repo 皆已公開，以支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 16 個 demo repo 皆已公開，以支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -90,6 +90,9 @@
 - `startup-pawmunity-care`：依 114 年大專校院創新創業實戰模擬學習平臺 `Pawmunity寵物共養社群系統` 做出的寵物共養照護媒合平台。
 - `startup-emoto-support-platform`：依 114 年 Healthy x Happy `情緒零時差：Emoto 線上心理支持平台` 做出的情緒支持媒合與追蹤平台。
 - `startup-youngfly-carpool`：依 112 年 Young 飛 `作伙來共乘` 做出的青年共享交通與共乘媒合平台。
+- `startup-captain-guide-platform`：依 114 年創業歸故里 `船長帶路-智慧平台` 做出的基隆港灣體驗預約與營運中控台。
+- `startup-youbuddy-singing-social`：依 114 年實戰模擬平臺 `友伴-銀髮族唱歌交友app` 做出的銀髮友善唱歌社交 App，並參考官方案例頁公開介面方向。
+- `startup-clearway-ambulance-alert`：依 114 年實戰模擬平臺 `ClearWay 救護車預警 App` 做出的急救調度與交通預警中控台。
 
 ## Young 飛資料說明
 
