@@ -1,14 +1,14 @@
 # 台灣大學創業競賽作品整理系統
 
-這個 repo 是大學/青年創業競賽作品的整理網站。目前收錄教育部青年發展署 U-start 創新創業計畫與 U-start 原漾計畫近五年第二階段績優團隊，並標記哪些作品適合先做成軟體原型。
+這個 repo 是大學/青年創業競賽作品的整理網站。目前收錄教育部青年發展署 U-start 創新創業計畫、U-start 原漾計畫與 Young 飛全球行動計畫近五年官方績優/得獎團隊，並標記哪些作品適合先做成軟體原型。
 
 ## 已整理範圍
 
-- 競賽：U-start 創新創業計畫、U-start 原漾計畫
+- 競賽：U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫
 - 主辦：教育部青年發展署
-- 屆次：110、111、112、113、114 年度第二階段績優團隊
-- 收錄：137 筆作品
-- 可軟體實作候選：74 筆
+- 屆次：110、111、112、113、114 年度官方績優/得獎團隊
+- 收錄：224 筆作品
+- 可軟體實作候選：98 筆
 - 已建立原型 repo：8 筆
 
 ## 比賽來源與官方來源
@@ -25,6 +25,12 @@
 - U-start 原漾 112 年度第二階段績優團隊：https://ustart.yda.gov.tw/p/405-1000-1980,c147.php?Lang=zh-tw
 - U-start 原漾 113 年度第二階段績優團隊：https://ustart.yda.gov.tw/p/405-1000-2079,c147.php?Lang=zh-tw
 - U-start 原漾 114 年度第二階段績優團隊：https://ustart.yda.gov.tw/p/405-1000-2177,c147.php?Lang=zh-tw
+- Young 飛全球行動計畫最新消息：https://www.yda.gov.tw/planDocList.aspx?c=1&p=1014
+- Young 飛 110 年績優團隊徵選得獎團隊：https://www.yda.gov.tw/docDetail.aspx?docid=56625&pid=53&uid=94
+- Young 飛 111 年績優團隊徵選審查結果：https://www.yda.gov.tw/docDetail.aspx?docid=57297&pid=53&uid=94
+- Young 飛 112 年績優團隊徵選審查結果：https://www.yda.gov.tw/docDetail.aspx?docid=58156&pid=53&uid=94
+- Young 飛 113 年績優團隊徵選審查結果：https://www.yda.gov.tw/docDetail.aspx?docid=58696&pid=53&uid=94
+- Young 飛 114 年績優團隊徵選審查結果：https://www.yda.gov.tw/docDetail.aspx?docid=59290&pid=53&uid=66
 
 ## 資料判斷規則
 
@@ -43,9 +49,9 @@
 - `prototype-alonesafe-companion`：依 114 年 U-start `AloneSafe` 做出的個人安全資訊服務。
 - `prototype-medical-line-education`：依 114 年 U-start `醫線教育` 做出的醫療教育平台。
 
-## Young 飛狀態
+## Young 飛資料說明
 
-使用者指定 Young 飛作為相近類型，但目前尚未確認穩定官方得獎名單頁。資料庫已保留 `youngfly` 欄位，後續找到官方來源後可直接補進同一格式。
+Young 飛官方附件多半只列團隊名稱、獎項與獎金，未列學校、公司或完整方案內容。本資料庫會先保守收錄官方名單，並只在團隊名稱明顯指向社群、平台、共乘、學院、照護或資訊服務時標為可軟體化候選。
 
 ## 使用方式
 
