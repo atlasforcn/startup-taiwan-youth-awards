@@ -9,12 +9,12 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品
 - 可軟體實作候選：379 筆
-- 已建立原型 repo：16 筆
+- 已建立原型 repo：21 筆
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 16 個 demo repo 皆已公開，以支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 21 個 demo repo 皆已公開，以支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -93,6 +93,11 @@
 - `startup-captain-guide-platform`：依 114 年創業歸故里 `船長帶路-智慧平台` 做出的基隆港灣體驗預約與營運中控台。
 - `startup-youbuddy-singing-social`：依 114 年實戰模擬平臺 `友伴-銀髮族唱歌交友app` 做出的銀髮友善唱歌社交 App，並參考官方案例頁公開介面方向。
 - `startup-clearway-ambulance-alert`：依 114 年實戰模擬平臺 `ClearWay 救護車預警 App` 做出的急救調度與交通預警中控台。
+- `startup-parent-medical-consult`：依 114 年創業歸故里 `24小時全方位親子即時醫療專業線上諮詢` 做出的親子醫療分流與線上諮詢平台。
+- `startup-hahago-sroi-sports`：依 113 年創業歸故里 `以 SROI 為媒合評估基準之HAHAGO運動做公益平台` 做出的運動公益媒合與影響力評估平台。
+- `startup-auramap-navigation`：依 114 年實戰模擬平臺 `AuraMap｜視障者的科技導盲犬` 做出的視障室內導航輔助系統。
+- `startup-bassa-food-procurement`：依 112 年實戰模擬平臺 `BASSA一站式商業食材採購平台` 做出的餐飲食材採購與供應商比價系統。
+- `startup-cloud-hospital-training`：依 113 年實戰模擬平臺 `完全雲端醫院：結合 AI 的醫學生線上臨床診斷邏輯訓練平台` 做出的 AI 臨床診斷訓練平台。
 
 ## Young 飛資料說明
 

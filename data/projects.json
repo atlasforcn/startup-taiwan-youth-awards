@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T14:33:34.536Z",
+  "generatedAt": "2026-06-10T21:09:32.021Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -305,7 +305,7 @@
   "summary": {
     "projectCount": 574,
     "softwareCandidateCount": 379,
-    "prototypeCount": 16
+    "prototypeCount": 21
   },
   "projects": [
     {
@@ -724,9 +724,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "24小時全方位親子即時醫療專業線上諮詢：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
-      "prototypeRepo": null,
-      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
+      "implementationConcept": "24小時親子即時醫療線上諮詢：症狀分流、候診排序、醫護諮詢、照護提醒、風險升級與轉診建議。",
+      "prototypeRepo": "../startup-parent-medical-consult",
+      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。",
+      "githubRepo": "https://github.com/atlasforcn/startup-parent-medical-consult",
+      "demoUrl": "https://atlasforcn.github.io/startup-parent-medical-consult/"
     },
     {
       "id": "sccontest-114-20-nexai",
@@ -1496,9 +1498,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "以 SROI 為媒合評估基準之HAHAGO運動做公益平台：可實作為線上平台或管理系統，包含使用者流程、資料看板、媒合/預約、紀錄追蹤與成果分析。",
-      "prototypeRepo": null,
-      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
+      "implementationConcept": "HAHAGO 運動做公益平台：以 SROI 評估活動媒合，串接參與者、企業、NGO 任務與公益成果追蹤。",
+      "prototypeRepo": "../startup-hahago-sroi-sports",
+      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。",
+      "githubRepo": "https://github.com/atlasforcn/startup-hahago-sroi-sports",
+      "demoUrl": "https://atlasforcn.github.io/startup-hahago-sroi-sports/"
     },
     {
       "id": "sccontest-113-55-連橫生技-股-公司",
@@ -3062,9 +3066,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "視障導航輔助系統：室內定位、AI 視覺辨識、語音/震動回饋、障礙提醒與場域部署管理。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「AuraMap」；教練注資額 7,200,000、民眾注資額 3,070,000、總創新幣 10,270,000。"
+      "implementationConcept": "視障導航輔助系統：目的地設定、室內路線節點、障礙物提醒、語音/震動提示、場域信標狀態與導航紀錄。",
+      "prototypeRepo": "../startup-auramap-navigation",
+      "notes": "官方成功案例頁列出團隊「AuraMap」；教練注資額 7,200,000、民眾注資額 3,070,000、總創新幣 10,270,000。",
+      "githubRepo": "https://github.com/atlasforcn/startup-auramap-navigation",
+      "demoUrl": "https://atlasforcn.github.io/startup-auramap-navigation/"
     },
     {
       "id": "ssp-114-01-1443-c-care即時無菌冰敷儀",
@@ -3924,9 +3930,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "完全雲端醫院：結合 AI 的醫學生線上臨床診斷邏輯訓練平台：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「SLEK」；教練注資額 5,400,000、民眾注資額 1,660,000、總創新幣 7,060,000。"
+      "implementationConcept": "完全雲端醫院 AI 臨床診斷訓練平台：虛擬病人、問診/檢查選擇、AI 推理提示、鑑別診斷、教師回饋與成績紀錄。",
+      "prototypeRepo": "../startup-cloud-hospital-training",
+      "notes": "官方成功案例頁列出團隊「SLEK」；教練注資額 5,400,000、民眾注資額 1,660,000、總創新幣 7,060,000。",
+      "githubRepo": "https://github.com/atlasforcn/startup-cloud-hospital-training",
+      "demoUrl": "https://atlasforcn.github.io/startup-cloud-hospital-training/"
     },
     {
       "id": "ssp-113-01-1112-我的生命故事藝術書",
@@ -5156,9 +5164,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "BASSA一站式商業食材採購平台：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「002FiatLux」；教練注資額 7,600,000、民眾注資額 820,000、總創新幣 8,420,000。"
+      "implementationConcept": "BASSA 一站式商業食材採購平台：食材目錄、供應商報價比較、採購車、配送排程、餐廳庫存與成本分析。",
+      "prototypeRepo": "../startup-bassa-food-procurement",
+      "notes": "官方成功案例頁列出團隊「002FiatLux」；教練注資額 7,600,000、民眾注資額 820,000、總創新幣 8,420,000。",
+      "githubRepo": "https://github.com/atlasforcn/startup-bassa-food-procurement",
+      "demoUrl": "https://atlasforcn.github.io/startup-bassa-food-procurement/"
     },
     {
       "id": "ssp-112-01-616-beein蜜韾-帶著蜜蜂重新喚醒土地",
