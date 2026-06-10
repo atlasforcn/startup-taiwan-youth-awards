@@ -9,7 +9,13 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品
 - 可軟體實作候選：379 筆
-- 已建立原型 repo：12 筆
+- 已建立原型 repo：13 筆
+
+## GitHub 分類命名
+
+- 主整理網站 repo：`startup-taiwan-youth-awards`
+- 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
+- 建議 GitHub topic：`taiwan-startup-awards`、`startup-prototype`、`youth-startup`，並依來源加上 `ustart`、`youngfly`、`fiti` 等 topic。
 
 ## 比賽來源與官方來源
 
@@ -67,18 +73,19 @@
 
 ## 已開原型
 
-- `prototype-notex-marketplace`：依 114 年 U-start `NoteX 筆記市集` 做出的筆記交易/學習資源市集。
-- `prototype-internship-match`：依 114 年 U-start `實習通` 做出的實習媒合管理平台。
-- `prototype-rag-semiconductor-workbench`：依 114 年 U-start `RAGtimAIze 半導體智慧模組串接平台` 做出的 RAG 模組工作台。
-- `prototype-shared-fashion-platform`：依使用者補充概念做出的台灣共享時尚/服飾租借平台；獎項來源與屆次待查。
-- `prototype-idjalan-cultural-routes`：依 113 年 U-start 原漾 `I Djalan 在路上` 做出的文化路線與體驗預約平台。
-- `prototype-boringai-workflow`：依 114 年 U-start `BoringAI` 做出的 AI 工作流平台。
-- `prototype-alonesafe-companion`：依 114 年 U-start `AloneSafe` 做出的個人安全資訊服務。
-- `prototype-medical-line-education`：依 114 年 U-start `醫線教育` 做出的醫療教育平台。
-- `prototype-nexai-farm-market`：依 114 年創業歸故里 `農場到市場 AI：基於 LINE 的農民銷售與行銷助理` 做出的農民銷售 AI 助理。
-- `prototype-anivance-ai-biochip`：依 112 年 FITI `Anivance AI` 做出的仿生晶片與 AI 生物分析工作台。
-- `prototype-pawmunity-care`：依 114 年大專校院創新創業實戰模擬學習平臺 `Pawmunity寵物共養社群系統` 做出的寵物共養照護媒合平台。
-- `prototype-emoto-support-platform`：依 114 年 Healthy x Happy `情緒零時差：Emoto 線上心理支持平台` 做出的情緒支持媒合與追蹤平台。
+- `startup-notex-marketplace`：依 114 年 U-start `NoteX 筆記市集` 做出的筆記交易/學習資源市集。
+- `startup-internship-match`：依 114 年 U-start `實習通` 做出的實習媒合管理平台。
+- `startup-rag-semiconductor-workbench`：依 114 年 U-start `RAGtimAIze 半導體智慧模組串接平台` 做出的 RAG 模組工作台。
+- `startup-shared-fashion-platform`：依使用者補充概念做出的台灣共享時尚/服飾租借平台；獎項來源與屆次待查。
+- `startup-idjalan-cultural-routes`：依 113 年 U-start 原漾 `I Djalan 在路上` 做出的文化路線與體驗預約平台。
+- `startup-boringai-workflow`：依 114 年 U-start `BoringAI` 做出的 AI 工作流平台。
+- `startup-alonesafe-companion`：依 114 年 U-start `AloneSafe` 做出的個人安全資訊服務。
+- `startup-medical-line-education`：依 114 年 U-start `醫線教育` 做出的醫療教育平台。
+- `startup-nexai-farm-market`：依 114 年創業歸故里 `農場到市場 AI：基於 LINE 的農民銷售與行銷助理` 做出的農民銷售 AI 助理。
+- `startup-anivance-ai-biochip`：依 112 年 FITI `Anivance AI` 做出的仿生晶片與 AI 生物分析工作台。
+- `startup-pawmunity-care`：依 114 年大專校院創新創業實戰模擬學習平臺 `Pawmunity寵物共養社群系統` 做出的寵物共養照護媒合平台。
+- `startup-emoto-support-platform`：依 114 年 Healthy x Happy `情緒零時差：Emoto 線上心理支持平台` 做出的情緒支持媒合與追蹤平台。
+- `startup-youngfly-carpool`：依 112 年 Young 飛 `作伙來共乘` 做出的青年共享交通與共乘媒合平台。
 
 ## Young 飛資料說明
 

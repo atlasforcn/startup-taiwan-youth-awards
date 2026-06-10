@@ -10,6 +10,7 @@ const els = {
   category: document.querySelector("#categoryFilter"),
   confidence: document.querySelector("#confidenceFilter"),
   softwareOnly: document.querySelector("#softwareOnly"),
+  prototypeOnly: document.querySelector("#prototypeOnly"),
   cards: document.querySelector("#projectCards"),
   table: document.querySelector("#projectTable"),
   detail: document.querySelector("#projectDetail"),
@@ -28,6 +29,14 @@ function confidenceClass(value) {
   if (value === "明確") return "badge-clear";
   if (value === "推測") return "badge-inferred";
   return "badge-research";
+}
+
+function prototypeStatus(project) {
+  return project.prototypeRepo ? "已開原型" : "待開原型";
+}
+
+function prototypeClass(project) {
+  return project.prototypeRepo ? "badge-prototype" : "badge-prototype-pending";
 }
 
 function displayName(project) {
@@ -54,7 +63,7 @@ function setupFilters() {
   els.year.insertAdjacentHTML("beforeend", years.map((year) => `<option value="${year}">${year} 年</option>`).join(""));
   els.category.insertAdjacentHTML("beforeend", categories.map((category) => `<option value="${category}">${category}</option>`).join(""));
 
-  [els.search, els.year, els.category, els.confidence, els.softwareOnly].forEach((el) => {
+  [els.search, els.year, els.category, els.confidence, els.softwareOnly, els.prototypeOnly].forEach((el) => {
     el.addEventListener("input", render);
     el.addEventListener("change", render);
   });
@@ -68,6 +77,7 @@ function filterProjects() {
   const category = els.category.value;
   const confidence = els.confidence.value;
   const softwareOnly = els.softwareOnly.checked;
+  const prototypeOnly = els.prototypeOnly.checked;
 
   return state.dataset.projects.filter((project) => {
     const haystack = [
@@ -82,7 +92,8 @@ function filterProjects() {
       && (year === "all" || String(project.rocYear) === year)
       && (category === "all" || project.category === category)
       && (confidence === "all" || project.softwareConfidence === confidence)
-      && (!softwareOnly || project.softwareCandidate);
+      && (!softwareOnly || project.softwareCandidate)
+      && (!prototypeOnly || project.prototypeRepo);
   });
 }
 
@@ -108,10 +119,13 @@ function renderCards() {
   }
 
   els.cards.innerHTML = items.map((project) => `
-    <button class="project-card ${project.id === state.selectedId ? "active" : ""}" type="button" data-id="${project.id}">
+    <button class="project-card ${project.prototypeRepo ? "has-prototype" : ""} ${project.id === state.selectedId ? "active" : ""}" type="button" data-id="${project.id}">
       <div class="project-title">
         <strong>${displayName(project)}</strong>
-        <span class="badge ${confidenceClass(project.softwareConfidence)}">${project.softwareConfidence}</span>
+        <span class="badge-stack">
+          <span class="badge ${prototypeClass(project)}">${prototypeStatus(project)}</span>
+          <span class="badge ${confidenceClass(project.softwareConfidence)}">${project.softwareConfidence}</span>
+        </span>
       </div>
       <div class="meta-line">${project.school} / ${project.category} / ${project.rocYear} 年</div>
       <div class="meta-line">來源：${sourceLabel(project)}</div>
@@ -138,11 +152,16 @@ function renderTable() {
       <td>${project.school}</td>
       <td>${project.category}</td>
       <td><span class="badge ${confidenceClass(project.softwareConfidence)}">${project.softwareCandidate ? project.softwareConfidence : "待查"}</span></td>
+      <td>
+        ${project.prototypeRepo
+          ? `<a class="prototype-table-link" href="${project.prototypeRepo}/index.html"><span class="badge badge-prototype">已開原型</span></a>`
+          : `<span class="badge badge-prototype-pending">待開原型</span>`}
+      </td>
       <td>${sourceLink(project)}</td>
     </tr>
   `).join("");
 
-  els.table.innerHTML = rows || `<tr><td colspan="6"><div class="no-results">沒有符合條件的作品。</div></td></tr>`;
+  els.table.innerHTML = rows || `<tr><td colspan="7"><div class="no-results">沒有符合條件的作品。</div></td></tr>`;
 }
 
 function renderDetail() {
@@ -170,6 +189,7 @@ function renderDetail() {
       <div class="detail-item"><span>學校/場域</span><strong>${selected.school}</strong></div>
       <div class="detail-item"><span>公司</span><strong>${selected.company || "待補"}</strong></div>
       <div class="detail-item"><span>獎補助</span><strong>${selected.awardAmountTenThousandNtd || "待查"} 萬元</strong></div>
+      <div class="detail-item"><span>原型狀態</span><strong>${prototypeStatus(selected)}</strong></div>
     </div>
     ${prototype}
     ${sourceLink(selected, "官方得獎名單")}
