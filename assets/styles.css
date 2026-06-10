@@ -162,6 +162,26 @@ a:hover {
   line-height: 1.55;
 }
 
+.source-taxonomy,
+.contact-box {
+  margin-top: 12px;
+}
+
+.source-taxonomy ul {
+  display: grid;
+  gap: 8px;
+  margin: 4px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contact-box a {
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
 .workspace {
   min-width: 0;
   padding: 30px;
@@ -224,6 +244,49 @@ a:hover {
   font-family: Georgia, "Noto Serif TC", serif;
   font-size: 44px;
   line-height: 1;
+}
+
+.notice-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.notice-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.disclaimer-card {
+  background: #fff7ef;
+  border-color: #e3c5a5;
+}
+
+.maintenance-card {
+  background: #eef7f4;
+  border-color: #bed8ce;
+}
+
+.notice-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.notice-card p:last-of-type {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.notice-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 850;
 }
 
 .content-grid {
@@ -521,6 +584,7 @@ td strong {
   }
 
   .content-grid,
+  .notice-grid,
   .metrics {
     grid-template-columns: 1fr 1fr;
   }
@@ -537,6 +601,7 @@ td strong {
   }
 
   .content-grid,
+  .notice-grid,
   .metrics,
   .detail-list {
     grid-template-columns: 1fr;

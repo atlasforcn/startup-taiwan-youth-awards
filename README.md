@@ -21,6 +21,26 @@
 - 原型 demo Pages：`https://atlasforcn.github.io/startup-xxxxx/`
 - 建議 GitHub topic：`taiwan-startup-awards`、`startup-prototype`、`youth-startup`，並依來源加上 `ustart`、`youngfly`、`fiti` 等 topic。
 
+## 維護政策與聯絡方式
+
+- 定期維護：主整理站會定期檢查官方連結、年度/屆次、得獎名單與 demo 對應狀態。
+- 來源優先序：優先使用主辦或承辦單位官方頁面、官方附件、官方案例頁；若使用新聞稿、團隊網站或使用者補充概念，會明確標示。
+- 更正與下架：若資料來源錯誤、描述不準確，或原團隊希望修正 demo 描述，可來信聯絡。
+- 聯絡信箱：vandcfuture+github@gmail.com
+
+## 資料來源分類
+
+為避免只依賴單一來源，本整理系統依資料場域分組：
+
+- 大專院校/青年：U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、大專校院創新創業實戰模擬學習平臺、Healthy x Happy 創新創業競賽。
+- 學研科技：FITI 創新創業激勵計畫。
+- 地方與業界：創業歸故里驗證輔導計畫。
+- 使用者補充/待查：使用者提出但尚未連結正式競賽獎項的概念，會保留待查標示。
+
+## Demo 免責聲明
+
+本 repo 與各 `startup-*` demo 是公開得獎資料整理與興趣練習。所有 demo 只是我們依公開資訊理解後嘗試打造的範例原型，不是原團隊的實際 demo、正式產品或授權作品，也不代表原得獎團隊、公司、學校或主辦單位立場。demo 不使用原團隊未公開資料；若參考官方案例頁公開介面方向，會在該 demo README 中註明。
+
 ## 比賽來源與官方來源
 
 - U-start 歷年補助名單：https://ustart.yda.gov.tw/p/412-1000-147.php?Lang=zh-tw
