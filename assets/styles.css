@@ -162,6 +162,26 @@ a:hover {
   line-height: 1.55;
 }
 
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 6px;
+}
+
+.source-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 9px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 850;
+}
+
 .source-taxonomy,
 .contact-box {
   margin-top: 12px;
