@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-09T21:56:40.259Z",
-  "scopeNote": "目前主資料源為 U-start 創新創業計畫近五年（110-114）第二階段績優團隊。Young 飛類型先保留為待查來源。",
+  "generatedAt": "2026-06-10T05:21:58.074Z",
+  "scopeNote": "目前主資料源為 U-start 創新創業計畫與 U-start 原漾計畫近五年（110-114）第二階段績優團隊。Young 飛類型先保留為待查來源。",
   "competitions": [
     {
       "id": "ustart",
@@ -100,7 +100,7 @@
   "summary": {
     "projectCount": 137,
     "softwareCandidateCount": 74,
-    "prototypeCount": 5
+    "prototypeCount": 8
   },
   "projects": [
     {
@@ -276,7 +276,7 @@
       "softwareCandidate": true,
       "softwareConfidence": "明確",
       "implementationConcept": "個人安全資訊服務：以行程、警示、緊急聯絡與定位紀錄支援獨行者。",
-      "prototypeRepo": null,
+      "prototypeRepo": "../prototype-alonesafe-companion",
       "notes": ""
     },
     {
@@ -408,7 +408,7 @@
       "softwareCandidate": true,
       "softwareConfidence": "明確",
       "implementationConcept": "AI 工作流平台：用任務看板、提示詞版本、模型比較與成效紀錄管理 AI 服務。",
-      "prototypeRepo": null,
+      "prototypeRepo": "../prototype-boringai-workflow",
       "notes": ""
     },
     {
@@ -738,7 +738,7 @@
       "softwareCandidate": true,
       "softwareConfidence": "明確",
       "implementationConcept": "醫療教育平台：課程、題庫、學習進度與師生互動。",
-      "prototypeRepo": null,
+      "prototypeRepo": "../prototype-medical-line-education",
       "notes": ""
     },
     {

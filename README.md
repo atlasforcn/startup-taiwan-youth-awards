@@ -1,6 +1,6 @@
 # 台灣大學創業競賽作品整理系統
 
-這個 repo 是大學/青年創業競賽作品的整理網站。第一版先收錄教育部青年發展署 U-start 創新創業計畫近五年第二階段績優團隊，並標記哪些作品適合先做成軟體原型。
+這個 repo 是大學/青年創業競賽作品的整理網站。目前收錄教育部青年發展署 U-start 創新創業計畫與 U-start 原漾計畫近五年第二階段績優團隊，並標記哪些作品適合先做成軟體原型。
 
 ## 已整理範圍
 
@@ -9,7 +9,7 @@
 - 屆次：110、111、112、113、114 年度第二階段績優團隊
 - 收錄：137 筆作品
 - 可軟體實作候選：74 筆
-- 已建立原型 repo：5 筆
+- 已建立原型 repo：8 筆
 
 ## 比賽來源與官方來源
 
@@ -39,6 +39,9 @@
 - `prototype-rag-semiconductor-workbench`：依 114 年 U-start `RAGtimAIze 半導體智慧模組串接平台` 做出的 RAG 模組工作台。
 - `prototype-shared-fashion-platform`：依使用者補充概念做出的台灣共享時尚/服飾租借平台；獎項來源與屆次待查。
 - `prototype-idjalan-cultural-routes`：依 113 年 U-start 原漾 `I Djalan 在路上` 做出的文化路線與體驗預約平台。
+- `prototype-boringai-workflow`：依 114 年 U-start `BoringAI` 做出的 AI 工作流平台。
+- `prototype-alonesafe-companion`：依 114 年 U-start `AloneSafe` 做出的個人安全資訊服務。
+- `prototype-medical-line-education`：依 114 年 U-start `醫線教育` 做出的醫療教育平台。
 
 ## Young 飛狀態
 
