@@ -167,7 +167,7 @@ function renderDetail() {
     <p class="concept-line">${selected.implementationConcept}</p>
     <div class="detail-list">
       <div class="detail-item"><span>獎項來源</span><strong>${sourceLabel(selected)}</strong></div>
-      <div class="detail-item"><span>學校</span><strong>${selected.school}</strong></div>
+      <div class="detail-item"><span>學校/場域</span><strong>${selected.school}</strong></div>
       <div class="detail-item"><span>公司</span><strong>${selected.company || "待補"}</strong></div>
       <div class="detail-item"><span>獎補助</span><strong>${selected.awardAmountTenThousandNtd || "待查"} 萬元</strong></div>
     </div>
