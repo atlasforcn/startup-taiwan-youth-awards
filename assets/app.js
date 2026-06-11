@@ -44,6 +44,19 @@ function demoLink(project) {
   return project.prototypeRepo ? `${project.prototypeRepo}/index.html` : "";
 }
 
+function isPublicProject(project) {
+  return project.visibility !== "hidden";
+}
+
+function publicProjects() {
+  return state.dataset.projects.filter(isPublicProject);
+}
+
+function compareFeaturedDemo(a, b) {
+  if (a.featuredDemo === b.featuredDemo) return 0;
+  return a.featuredDemo ? -1 : 1;
+}
+
 function displayName(project) {
   return project.team || project.company || "未命名作品";
 }
@@ -62,8 +75,9 @@ function sourceLink(project, label = "官方來源") {
 }
 
 function setupFilters() {
-  const years = uniqueSorted(state.dataset.projects.map((p) => p.rocYear));
-  const categories = uniqueSorted(state.dataset.projects.map((p) => p.category));
+  const projects = publicProjects();
+  const years = uniqueSorted(projects.map((p) => p.rocYear));
+  const categories = uniqueSorted(projects.map((p) => p.category));
 
   els.year.insertAdjacentHTML("beforeend", years.map((year) => `<option value="${year}">${year} 年</option>`).join(""));
   els.category.insertAdjacentHTML("beforeend", categories.map((category) => `<option value="${category}">${category}</option>`).join(""));
@@ -84,7 +98,7 @@ function filterProjects() {
   const softwareOnly = els.softwareOnly.checked;
   const prototypeOnly = els.prototypeOnly.checked;
 
-  return state.dataset.projects.filter((project) => {
+  return publicProjects().filter((project) => {
     const haystack = [
       displayName(project),
       project.company,
@@ -99,11 +113,11 @@ function filterProjects() {
       && (confidence === "all" || project.softwareConfidence === confidence)
       && (!softwareOnly || project.softwareCandidate)
       && (!prototypeOnly || project.prototypeRepo);
-  });
+  }).sort(compareFeaturedDemo);
 }
 
 function renderMetrics() {
-  const projects = state.dataset.projects;
+  const projects = publicProjects();
   const software = projects.filter((p) => p.softwareCandidate);
   const prototypes = projects.filter((p) => p.prototypeRepo);
   const years = uniqueSorted(projects.map((p) => p.rocYear));
@@ -173,7 +187,7 @@ function renderTable() {
 }
 
 function renderDetail() {
-  const selected = state.dataset.projects.find((project) => project.id === state.selectedId) || state.filtered[0];
+  const selected = publicProjects().find((project) => project.id === state.selectedId) || state.filtered[0];
   if (!selected) {
     els.detail.className = "detail-empty";
     els.detail.textContent = "選取一個作品後，這裡會顯示獎項來源、屆次、核心概念與原型狀態。";
@@ -232,6 +246,7 @@ function exportFiltered() {
 async function init() {
   const response = await fetch("data/projects.json");
   state.dataset = await response.json();
+  state.selectedId = publicProjects().find((project) => project.featuredDemo)?.id || null;
   const generated = new Date(state.dataset.generatedAt);
   els.generatedAt.textContent = `更新 ${generated.toLocaleDateString("zh-TW")}`;
   setupFilters();

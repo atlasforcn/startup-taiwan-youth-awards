@@ -7,14 +7,15 @@
 - 競賽：U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺、Healthy x Happy 創新創業競賽
 - 主辦：教育部青年發展署、數位發展部數位產業署、國家科學及技術委員會 / 國家實驗研究院科技政策研究與資訊中心、國立臺北護理健康大學育成中心
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
-- 收錄：574 筆作品
-- 可軟體實作候選：379 筆
-- 已建立原型 repo：30 筆
+- 收錄：574 筆作品（公開 573 筆，隱藏 1 筆）
+- 可軟體實作候選：378 筆公開候選
+- 已公開原型 repo：29 筆（另 1 筆已隱藏）
+- 目前展示 Demo：[`NoteX 筆記市集`](https://atlasforcn.github.io/startup-notex-marketplace/)
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 30 個 demo repo 皆已公開，以支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 29 個公開 demo repo 支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -35,7 +36,7 @@
 - 大專院校/青年：U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、大專校院創新創業實戰模擬學習平臺、Healthy x Happy 創新創業競賽。
 - 學研科技：FITI 創新創業激勵計畫。
 - 地方與業界：創業歸故里驗證輔導計畫。
-- 使用者補充/待查：使用者提出但尚未連結正式競賽獎項的概念，會保留待查標示。
+- 使用者補充/待查：使用者提出但尚未連結正式競賽獎項的概念，會保留待查標示；下架項目會從公開清單、統計與匯出中隱藏。
 
 ## Demo 免責聲明
 
@@ -95,12 +96,11 @@
 - `推測`：作品名稱與類別顯示可軟體化，但仍需要補查簡報、官網或新聞。
 - `待查`：公開名單只足以確認得獎資訊，暫不臆造核心產品。
 
-## 已開原型
+## 已公開原型
 
-- `startup-notex-marketplace`：依 114 年 U-start `NoteX 筆記市集` 做出的筆記交易/學習資源市集。
+- `startup-notex-marketplace`：依 114 年 U-start `NoteX 筆記市集` 做出的筆記交易/學習資源市集；目前作為替代展示 demo。
 - `startup-internship-match`：依 114 年 U-start `實習通` 做出的實習媒合管理平台。
 - `startup-rag-semiconductor-workbench`：依 114 年 U-start `RAGtimAIze 半導體智慧模組串接平台` 做出的 RAG 模組工作台。
-- `startup-shared-fashion-platform`：依使用者補充概念做出的台灣共享時尚/服飾租借平台；獎項來源與屆次待查。
 - `startup-idjalan-cultural-routes`：依 113 年 U-start 原漾 `I Djalan 在路上` 做出的文化路線與體驗預約平台。
 - `startup-boringai-workflow`：依 114 年 U-start `BoringAI` 做出的 AI 工作流平台。
 - `startup-alonesafe-companion`：依 114 年 U-start `AloneSafe` 做出的個人安全資訊服務。
@@ -127,6 +127,10 @@
 - `startup-phoenix-workplace`：依 112 年實戰模擬平臺 `Phoenix女性友善職場平台` 做出的女性友善職場評估、職缺媒合與改善追蹤平台。
 - `startup-green-camping-share`：依 112 年實戰模擬平臺 `營享-綠色露營共享平台` 做出的露營用品共享、營地媒合與碳減量估算平台。
 - `startup-jumping-note-performer-crm`：依 112 年實戰模擬平臺 `音躍 - 最適合新手表演者的客戶管理系統` 做出的新手表演者演出 CRM。
+
+## 已隱藏原型
+
+- `startup-shared-fashion-platform`：依使用者補充概念建立，尚未對應正式創業競賽屆次；2026-06-11 已下架，repo 轉為 private，並從公開清單、統計、匯出與 Demo 連結中隱藏。
 
 ## Young 飛資料說明
 

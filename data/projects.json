@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T21:09:32.021Z",
+  "generatedAt": "2026-06-11T21:19:16Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -304,8 +304,13 @@
   ],
   "summary": {
     "projectCount": 574,
+    "publicProjectCount": 573,
+    "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
-    "prototypeCount": 30
+    "publicSoftwareCandidateCount": 378,
+    "prototypeCount": 30,
+    "publicPrototypeCount": 29,
+    "featuredDemoId": "ustart-114-19-notex-筆記市集"
   },
   "projects": [
     {
@@ -8069,10 +8074,11 @@
       "softwareCandidate": true,
       "softwareConfidence": "明確",
       "implementationConcept": "讓有衣服的人把不常穿的衣服出租，讓更多人以租借方式享受時尚流通；核心流程包含衣櫥上架、租期管理、押金/清潔規則、評價信任與循環效益追蹤。",
+      "visibility": "hidden",
+      "hiddenAt": "2026-06-11",
+      "hiddenReason": "使用者補充概念尚未連結正式創業競賽屆次；已依下架要求轉為隱藏，不再公開展示或提供 Demo 連結。",
       "prototypeRepo": "../startup-shared-fashion-platform",
-      "notes": "使用者補充概念，尚未對應到正式創業競賽獎項來源。",
-      "githubRepo": "https://github.com/atlasforcn/startup-shared-fashion-platform",
-      "demoUrl": "https://atlasforcn.github.io/startup-shared-fashion-platform/"
+      "notes": "使用者補充概念，尚未對應到正式創業競賽獎項來源；2026-06-11 已依下架要求隱藏。"
     },
     {
       "id": "youngfly-114-01-天下茶航",
@@ -10503,7 +10509,8 @@
       "prototypeRepo": "../startup-notex-marketplace",
       "notes": "",
       "githubRepo": "https://github.com/atlasforcn/startup-notex-marketplace",
-      "demoUrl": "https://atlasforcn.github.io/startup-notex-marketplace/"
+      "demoUrl": "https://atlasforcn.github.io/startup-notex-marketplace/",
+      "featuredDemo": true
     },
     {
       "id": "ustart-114-20-北方桌遊設計",
