@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T21:19:16Z",
+  "generatedAt": "2026-06-11T21:53:40Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,9 +308,9 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 30,
-    "publicPrototypeCount": 29,
-    "featuredDemoId": "ustart-114-19-notex-筆記市集"
+    "prototypeCount": 31,
+    "publicPrototypeCount": 30,
+    "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
     {
@@ -3192,8 +3192,11 @@
       "softwareCandidate": true,
       "softwareConfidence": "明確",
       "implementationConcept": "Law 網之魚 — 法律科技分析，微型創業更安心：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「Law 網之魚 — 法律科技分析，微型創業更安心」；教練注資額 6,650,000、民眾注資額 3,110,000、總創新幣 9,760,000。"
+      "prototypeRepo": "../startup-lawfish-legaltech",
+      "notes": "官方成功案例頁列出團隊「Law 網之魚 — 法律科技分析，微型創業更安心」；教練注資額 6,650,000、民眾注資額 3,110,000、總創新幣 9,760,000。",
+      "githubRepo": "https://github.com/atlasforcn/startup-lawfish-legaltech",
+      "demoUrl": "https://atlasforcn.github.io/startup-lawfish-legaltech/",
+      "featuredDemo": true
     },
     {
       "id": "ssp-114-01-1374-pawsafex-智慧誤食防護項圈",
@@ -10509,8 +10512,7 @@
       "prototypeRepo": "../startup-notex-marketplace",
       "notes": "",
       "githubRepo": "https://github.com/atlasforcn/startup-notex-marketplace",
-      "demoUrl": "https://atlasforcn.github.io/startup-notex-marketplace/",
-      "featuredDemo": true
+      "demoUrl": "https://atlasforcn.github.io/startup-notex-marketplace/"
     },
     {
       "id": "ustart-114-20-北方桌遊設計",

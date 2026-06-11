@@ -9,13 +9,13 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品（公開 573 筆，隱藏 1 筆）
 - 可軟體實作候選：378 筆公開候選
-- 已公開原型 repo：29 筆（另 1 筆已隱藏）
-- 目前展示 Demo：[`NoteX 筆記市集`](https://atlasforcn.github.io/startup-notex-marketplace/)
+- 已公開原型 repo：30 筆（另 1 筆已隱藏）
+- 目前展示 Demo：[`Law 網之魚 — 法律科技分析，微型創業更安心`](https://atlasforcn.github.io/startup-lawfish-legaltech/)
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 29 個公開 demo repo 支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 30 個公開 demo repo 支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -98,7 +98,8 @@
 
 ## 已公開原型
 
-- `startup-notex-marketplace`：依 114 年 U-start `NoteX 筆記市集` 做出的筆記交易/學習資源市集；目前作為替代展示 demo。
+- `startup-lawfish-legaltech`：依 114 年實戰模擬平臺 `Law 網之魚 — 法律科技分析，微型創業更安心` 做出的微型企業法務風險分析 SaaS；目前作為展示 demo。
+- `startup-notex-marketplace`：依 114 年 U-start `NoteX 筆記市集` 做出的筆記交易/學習資源市集。
 - `startup-internship-match`：依 114 年 U-start `實習通` 做出的實習媒合管理平台。
 - `startup-rag-semiconductor-workbench`：依 114 年 U-start `RAGtimAIze 半導體智慧模組串接平台` 做出的 RAG 模組工作台。
 - `startup-idjalan-cultural-routes`：依 113 年 U-start 原漾 `I Djalan 在路上` 做出的文化路線與體驗預約平台。
