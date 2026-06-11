@@ -305,7 +305,7 @@
   "summary": {
     "projectCount": 574,
     "softwareCandidateCount": 379,
-    "prototypeCount": 21
+    "prototypeCount": 30
   },
   "projects": [
     {
@@ -460,9 +460,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "Smart Fortune 智慧信仰系統：可實作為線上平台或管理系統，包含使用者流程、資料看板、媒合/預約、紀錄追蹤與成果分析。",
-      "prototypeRepo": null,
-      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
+      "implementationConcept": "Smart Fortune 智慧信仰系統：本原型實作為廟務/信仰服務數位工作台，包含祈福預約、線上點燈/法會訂單、信眾會員卡、功德金收支看板、籤詩與祭祀流程引導、廟方待辦與通知。",
+      "prototypeRepo": "../startup-smart-fortune-faith",
+      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。",
+      "githubRepo": "https://github.com/atlasforcn/startup-smart-fortune-faith",
+      "demoUrl": "https://atlasforcn.github.io/startup-smart-fortune-faith/"
     },
     {
       "id": "sccontest-114-08-ai科技優米",
@@ -772,9 +774,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "鏈結食代-打造學校午餐永續服務平台：可實作為線上平台或管理系統，包含使用者流程、資料看板、媒合/預約、紀錄追蹤與成果分析。",
-      "prototypeRepo": null,
-      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
+      "implementationConcept": "鏈結食代-打造學校午餐永續服務平台：本原型實作為學校午餐永續採購與營養管理平台，包含菜單排程、在地供應商媒合、食材碳足跡/履歷、營養指標、班級回饋與採購核准。",
+      "prototypeRepo": "../startup-school-lunch-sustainability",
+      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。",
+      "githubRepo": "https://github.com/atlasforcn/startup-school-lunch-sustainability",
+      "demoUrl": "https://atlasforcn.github.io/startup-school-lunch-sustainability/"
     },
     {
       "id": "sccontest-114-22-澄涼共創有限公司",
@@ -1014,9 +1018,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "孩子的AI人工智慧助教-校園及家庭整體社交環境支持幫助：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
-      "prototypeRepo": null,
-      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
+      "implementationConcept": "孩子的AI人工智慧助教：本原型實作為孩子社交情境 AI 練習與家校協作平台，包含情境卡、對話練習、情緒線索、觀察紀錄、支持策略、AI 摘要與進步軌跡。",
+      "prototypeRepo": "../startup-child-ai-social-coach",
+      "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。",
+      "githubRepo": "https://github.com/atlasforcn/startup-child-ai-social-coach",
+      "demoUrl": "https://atlasforcn.github.io/startup-child-ai-social-coach/"
     },
     {
       "id": "sccontest-114-33-悠由數據應用股份有限公司",
@@ -3776,9 +3782,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "READii 讀意｜情緒感知與適性引導學習系統：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「Readii」；教練注資額 4,600,000、民眾注資額 2,100,000、總創新幣 6,700,000。"
+      "implementationConcept": "READii 讀意｜情緒感知與適性引導學習系統：本原型實作為閱讀/學習時情緒感知與適性引導平台，包含學生閱讀任務、情緒/專注狀態、即時引導卡、教師班級總覽、困難標籤與進度報告。",
+      "prototypeRepo": "../startup-readii-emotion-learning",
+      "notes": "官方成功案例頁列出團隊「Readii」；教練注資額 4,600,000、民眾注資額 2,100,000、總創新幣 6,700,000。",
+      "githubRepo": "https://github.com/atlasforcn/startup-readii-emotion-learning",
+      "demoUrl": "https://atlasforcn.github.io/startup-readii-emotion-learning/"
     },
     {
       "id": "ssp-114-02-1710-silversole-智慧隱形照護鞋墊",
@@ -5210,9 +5218,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "iHeaDiary 智能頭痛管理：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「iHeaDiary」；教練注資額 10,150,000、民眾注資額 5,905,000、總創新幣 16,055,000。"
+      "implementationConcept": "iHeaDiary 智能頭痛管理：本原型實作為頭痛日誌與誘因分析工具，包含痛感量表、誘因標籤、用藥/睡眠/壓力追蹤、趨勢圖、就醫摘要與提醒。",
+      "prototypeRepo": "../startup-iheadiary-headache",
+      "notes": "官方成功案例頁列出團隊「iHeaDiary」；教練注資額 10,150,000、民眾注資額 5,905,000、總創新幣 16,055,000。",
+      "githubRepo": "https://github.com/atlasforcn/startup-iheadiary-headache",
+      "demoUrl": "https://atlasforcn.github.io/startup-iheadiary-headache/"
     },
     {
       "id": "ssp-112-01-589-l3partner聽障者智慧計時夥伴",
@@ -5276,9 +5286,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "Phoenix女性友善職場平台：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「Phoenix女性友善職場平台」；教練注資額 4,510,000、民眾注資額 3,150,500、總創新幣 7,660,500。"
+      "implementationConcept": "Phoenix女性友善職場平台：本原型實作為女性友善職場評估、職缺媒合與改善追蹤平台，包含職缺篩選、企業友善指標、匿名回饋箱、制度檢核、改善任務與收藏比較。",
+      "prototypeRepo": "../startup-phoenix-workplace",
+      "notes": "官方成功案例頁列出團隊「Phoenix女性友善職場平台」；教練注資額 4,510,000、民眾注資額 3,150,500、總創新幣 7,660,500。",
+      "githubRepo": "https://github.com/atlasforcn/startup-phoenix-workplace",
+      "demoUrl": "https://atlasforcn.github.io/startup-phoenix-workplace/"
     },
     {
       "id": "ssp-112-02-902-ex001無動力外骨骼-揹的更輕鬆-走的更遠-讓knee事半功倍",
@@ -5430,9 +5442,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "音躍 - 最適合新手表演者的客戶管理系統：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「音躍-JUMPING NOTE」；教練注資額 3,430,000、民眾注資額 6,597,099、總創新幣 10,027,099。"
+      "implementationConcept": "音躍 - 最適合新手表演者的客戶管理系統：本原型實作為新手表演者演出客戶管理 CRM，包含詢價管線、客戶卡片、報價/合約狀態、曲目與設備需求、演出日曆、訊息模板、收款提醒與演後回饋。",
+      "prototypeRepo": "../startup-jumping-note-performer-crm",
+      "notes": "官方成功案例頁列出團隊「音躍-JUMPING NOTE」；教練注資額 3,430,000、民眾注資額 6,597,099、總創新幣 10,027,099。",
+      "githubRepo": "https://github.com/atlasforcn/startup-jumping-note-performer-crm",
+      "demoUrl": "https://atlasforcn.github.io/startup-jumping-note-performer-crm/"
     },
     {
       "id": "ssp-112-02-829-您的孩子脊椎側彎-?!-ṡtoi--骨骨管家-掌握矯正節奏-讓矯正變的更有效率！",
@@ -5606,9 +5620,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "營享-綠色露營共享平台：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「無限行」；教練注資額 4,300,000、民眾注資額 10,170,830、總創新幣 14,470,830。"
+      "implementationConcept": "營享-綠色露營共享平台：本原型實作為綠色露營用品共享與行程媒合平台，包含裝備租借、營地/日期搜尋、碳減量估算、押金/清潔狀態、出租者儀表板、行前清單與保障提示。",
+      "prototypeRepo": "../startup-green-camping-share",
+      "notes": "官方成功案例頁列出團隊「無限行」；教練注資額 4,300,000、民眾注資額 10,170,830、總創新幣 14,470,830。",
+      "githubRepo": "https://github.com/atlasforcn/startup-green-camping-share",
+      "demoUrl": "https://atlasforcn.github.io/startup-green-camping-share/"
     },
     {
       "id": "ssp-112-02-952-藝術限量雕塑一光合獸-《奇異光合》-x-《chiwen》-合作計畫",
@@ -5914,9 +5930,11 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "【SIGN你身邊】全台首創即時『手語轉語音』的中文繁體APP：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
-      "notes": "官方成功案例頁列出團隊「Deep Course」；教練注資額 3,736,000、民眾注資額 6,983,418、總創新幣 10,719,418。"
+      "implementationConcept": "SIGN 你身邊：本原型實作為手語轉語音情境翻譯 App，包含辨識狀態模擬、手勢片段選擇、即時翻譯文字、語音播報佇列、常用語快速卡、對話紀錄與無障礙設定。",
+      "prototypeRepo": "../startup-sign-companion-translator",
+      "notes": "官方成功案例頁列出團隊「Deep Course」；教練注資額 3,736,000、民眾注資額 6,983,418、總創新幣 10,719,418。",
+      "githubRepo": "https://github.com/atlasforcn/startup-sign-companion-translator",
+      "demoUrl": "https://atlasforcn.github.io/startup-sign-companion-translator/"
     },
     {
       "id": "ssp-111-01-434-二三日染-山林美學的色彩紀錄",

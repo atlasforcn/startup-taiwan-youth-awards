@@ -9,12 +9,12 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品
 - 可軟體實作候選：379 筆
-- 已建立原型 repo：21 筆
+- 已建立原型 repo：30 筆
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 21 個 demo repo 皆已公開，以支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 30 個 demo repo 皆已公開，以支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -118,6 +118,15 @@
 - `startup-auramap-navigation`：依 114 年實戰模擬平臺 `AuraMap｜視障者的科技導盲犬` 做出的視障室內導航輔助系統。
 - `startup-bassa-food-procurement`：依 112 年實戰模擬平臺 `BASSA一站式商業食材採購平台` 做出的餐飲食材採購與供應商比價系統。
 - `startup-cloud-hospital-training`：依 113 年實戰模擬平臺 `完全雲端醫院：結合 AI 的醫學生線上臨床診斷邏輯訓練平台` 做出的 AI 臨床診斷訓練平台。
+- `startup-smart-fortune-faith`：依 114 年創業歸故里 `Smart Fortune 智慧信仰系統` 做出的廟務與信仰服務數位工作台。
+- `startup-school-lunch-sustainability`：依 114 年創業歸故里 `鏈結食代-打造學校午餐永續服務平台` 做出的學校午餐永續採購與營養管理平台。
+- `startup-child-ai-social-coach`：依 114 年創業歸故里 `孩子的AI人工智慧助教-校園及家庭整體社交環境支持幫助` 做出的兒童社交情境 AI 練習與家校協作平台。
+- `startup-readii-emotion-learning`：依 114 年實戰模擬平臺 `READii 讀意｜情緒感知與適性引導學習系統` 做出的情緒感知閱讀與適性引導平台。
+- `startup-iheadiary-headache`：依 112 年實戰模擬平臺 `iHeaDiary 智能頭痛管理` 做出的頭痛日誌、誘因分析與就醫摘要工具。
+- `startup-sign-companion-translator`：依 111 年實戰模擬平臺 `SIGN你身邊` 做出的手語轉語音情境翻譯 App。
+- `startup-phoenix-workplace`：依 112 年實戰模擬平臺 `Phoenix女性友善職場平台` 做出的女性友善職場評估、職缺媒合與改善追蹤平台。
+- `startup-green-camping-share`：依 112 年實戰模擬平臺 `營享-綠色露營共享平台` 做出的露營用品共享、營地媒合與碳減量估算平台。
+- `startup-jumping-note-performer-crm`：依 112 年實戰模擬平臺 `音躍 - 最適合新手表演者的客戶管理系統` 做出的新手表演者演出 CRM。
 
 ## Young 飛資料說明
 
