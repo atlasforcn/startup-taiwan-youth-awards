@@ -4,6 +4,8 @@ const state = {
   selectedId: null,
 };
 
+const sidebarStorageKey = "startup-awards-sidebar-expanded";
+
 const els = {
   search: document.querySelector("#searchInput"),
   year: document.querySelector("#yearFilter"),
@@ -17,6 +19,7 @@ const els = {
   resultCount: document.querySelector("#resultCount"),
   generatedAt: document.querySelector("#generatedAt"),
   exportButton: document.querySelector("#exportButton"),
+  sidebarToggle: document.querySelector("#sidebarToggle"),
   metrics: {
     projects: document.querySelector("#metricProjects"),
     software: document.querySelector("#metricSoftware"),
@@ -24,6 +27,35 @@ const els = {
     years: document.querySelector("#metricYears"),
   },
 };
+
+function setSidebarExpanded(expanded) {
+  document.body.classList.toggle("filters-expanded", expanded);
+  els.sidebarToggle.setAttribute("aria-expanded", String(expanded));
+  els.sidebarToggle.setAttribute("aria-label", expanded ? "收合篩選與來源" : "展開篩選與來源");
+  els.sidebarToggle.setAttribute("title", expanded ? "收合篩選與來源" : "展開篩選與來源");
+  els.sidebarToggle.querySelector("span").textContent = expanded ? "‹" : "›";
+  writeStorage(sidebarStorageKey, expanded ? "1" : "0");
+}
+
+function restoreSidebarState() {
+  setSidebarExpanded(readStorage(sidebarStorageKey) === "1");
+}
+
+function readStorage(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function writeStorage(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // Filters remain usable when storage is unavailable.
+  }
+}
 
 function confidenceClass(value) {
   if (value === "明確") return "badge-clear";
@@ -88,6 +120,9 @@ function setupFilters() {
   });
 
   els.exportButton.addEventListener("click", exportFiltered);
+  els.sidebarToggle.addEventListener("click", () => {
+    setSidebarExpanded(!document.body.classList.contains("filters-expanded"));
+  });
 }
 
 function filterProjects() {
@@ -249,6 +284,7 @@ async function init() {
   state.selectedId = publicProjects().find((project) => project.featuredDemo)?.id || null;
   const generated = new Date(state.dataset.generatedAt);
   els.generatedAt.textContent = `更新 ${generated.toLocaleDateString("zh-TW")}`;
+  restoreSidebarState();
   setupFilters();
   render();
 }
