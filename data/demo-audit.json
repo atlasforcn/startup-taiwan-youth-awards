@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-25T04:41:37.910Z",
+  "generatedAt": "2026-06-25T04:48:20.218Z",
   "methodology": "自動證據初評，只用來排序人工複核優先級；最終分數仍須由 8 位專家依畫面、互動與來源逐項確認。",
   "summary": {
-    "audited": 36,
-    "heuristicPass": 12,
+    "audited": 37,
+    "heuristicPass": 13,
     "hasBlockers": 11,
     "averageScore": 72
   },
@@ -1848,6 +1848,71 @@
       "priorities": [
         "market",
         "business"
+      ]
+    },
+    {
+      "id": "healthyhappy-112-21-綠色行動者-碳足跡行動-app-carbon-footprint-app",
+      "repo": "startup-carbon-footprint-action",
+      "project": "碳足跡行動 APP Carbon Footprint App",
+      "competition": "全國大專校院 Healthy x Happy 創新創業競賽",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 81,
+      "passed": true,
+      "dimensions": {
+        "problem": 10,
+        "market": 10,
+        "interaction": 20,
+        "validation": 11,
+        "business": 5,
+        "visual": 10,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 21,
+        "listeners": 12,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": true,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "business",
+        "market"
       ]
     },
     {

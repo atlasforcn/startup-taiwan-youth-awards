@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:40:03Z",
+  "generatedAt": "2026-06-25T04:47:44Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 37,
-    "publicPrototypeCount": 36,
+    "prototypeCount": 38,
+    "publicPrototypeCount": 37,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -7284,8 +7284,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "碳足跡 App：日常行為紀錄、碳排估算、減碳任務、社群挑戰與個人化建議。",
-      "prototypeRepo": null,
+      "implementationConcept": "記錄交通、飲食、住宅與消費活動量，逐筆顯示示範排放係數、資料年份與不確定性，再依個人四週基準建立可持續的減碳任務；組織挑戰只彙整匿名完成次數與估算減量，並明確區分生活估算、企業 Scope 1–3 盤查與碳中和宣稱。",
+      "prototypeRepo": "../startup-carbon-footprint-action",
       "notes": "官方得獎名單列出團隊「綠色行動者」、作品「碳足跡行動 APP Carbon Footprint App」；獎項為第一名，禮券 2.5 萬元。"
     },
     {
