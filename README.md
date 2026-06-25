@@ -9,13 +9,13 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品（公開 573 筆，隱藏 1 筆）
 - 可軟體實作候選：378 筆公開候選
-- 已公開原型 repo：35 筆（另 1 筆已隱藏）
+- 已公開原型 repo：36 筆（另 1 筆已隱藏）
 - 目前展示 Demo：[`Law 網之魚 — 法律科技分析，微型創業更安心`](https://atlasforcn.github.io/startup-lawfish-legaltech/)
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 35 個公開 demo repo 支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 36 個公開 demo repo 支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -146,6 +146,7 @@
 - `startup-ai-pest-deterrence`：依 114 年創業歸故里 `以AI影像辨識搭配雷射驅逐鳥獸蟲害` 做出的事件辨識、人工標籤、安全互鎖、雙人審查與場域成效控制台；原型不連接或控制實體雷射設備。
 - `startup-basepara-baseball`：依 111 年創業歸故里 `Basepara智慧棒球運科訓練系統` 做出的動作分期、個人基準、教練判讀、訓練處方與複測履歷工作台。
 - `startup-table-tennis-tactics`：依 111 年創業歸故里 `數位桌球技戰術記錄與分析平台` 做出的場邊快速標記、落點熱區、戰術洞察、教練任務與賽後複盤工作台。
+- `startup-eatzy-healthy-map`：依 2024 Healthy × Happy `Eatzy健康餐地圖` 做出的健康元素篩選、附近餐點地圖、透明資料比較、客製預訂與餐後回饋平台。
 
 ## 已隱藏原型
 

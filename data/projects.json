@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:30:32Z",
+  "generatedAt": "2026-06-25T04:40:03Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 36,
-    "publicPrototypeCount": 35,
+    "prototypeCount": 37,
+    "publicPrototypeCount": 36,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -7174,8 +7174,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "Eatzy健康餐地圖：可實作為健康餐飲推薦與外送平台，包含飲食偏好、營養標籤、地圖搜尋、訂餐與健康目標追蹤。",
-      "prototypeRepo": null,
+      "implementationConcept": "以地點和今天在意的健康元素篩選附近餐點，呈現距離、價格、餐盤元素、資料來源與更新日期；使用者可比較最多兩份餐點、設定份量與醬料後送出預訂，餐後回饋只用於調整偏好與可行性，不提供醫療或疾病飲食處方。",
+      "prototypeRepo": "../startup-eatzy-healthy-map",
       "notes": "官方得獎名單列出團隊「飯飯之交」、作品「Eatzy健康餐地圖」；獎項為優勝獎，禮券 0.5 萬元。"
     },
     {

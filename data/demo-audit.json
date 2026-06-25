@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-25T04:31:04.542Z",
+  "generatedAt": "2026-06-25T04:41:37.910Z",
   "methodology": "自動證據初評，只用來排序人工複核優先級；最終分數仍須由 8 位專家依畫面、互動與來源逐項確認。",
   "summary": {
-    "audited": 35,
-    "heuristicPass": 11,
+    "audited": 36,
+    "heuristicPass": 12,
     "hasBlockers": 11,
     "averageScore": 72
   },
@@ -1913,6 +1913,71 @@
       "priorities": [
         "problem",
         "business"
+      ]
+    },
+    {
+      "id": "healthyhappy-113-16-飯飯之交-eatzy健康餐地圖",
+      "repo": "startup-eatzy-healthy-map",
+      "project": "Eatzy健康餐地圖",
+      "competition": "全國大專校院 Healthy x Happy 創新創業競賽",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 82,
+      "passed": true,
+      "dimensions": {
+        "problem": 7,
+        "market": 7,
+        "interaction": 20,
+        "validation": 13,
+        "business": 10,
+        "visual": 10,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 32,
+        "listeners": 14,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": true,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "problem"
       ]
     },
     {
