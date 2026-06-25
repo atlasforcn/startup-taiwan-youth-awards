@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:54:18Z",
+  "generatedAt": "2026-06-25T05:01:44Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 39,
-    "publicPrototypeCount": 38,
+    "prototypeCount": 40,
+    "publicPrototypeCount": 39,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -5894,8 +5894,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "行李追蹤與理賠平台：整合航空行李狀態、理賠申請、AR 尺寸測量、自助機台與通知流程。",
-      "prototypeRepo": null,
+      "implementationConcept": "在出發前綁定航班、行李牌、行李外觀與近距離感測器；移動或斷線事件先由旅客確認情境，找不到行李時才啟用事件時間線，並立即向航空公司或機場櫃檯取得申報參考編號，再整理照片、行李牌、事件與收據成資料包。原型不是 GPS、航空官方追蹤、報案或理賠系統。",
+      "prototypeRepo": "../startup-luggage-guardian",
       "notes": "官方成功案例頁列出團隊「SuperTony」；教練注資額 2,100,000、民眾注資額 4,160,192、總創新幣 6,260,192。"
     },
     {

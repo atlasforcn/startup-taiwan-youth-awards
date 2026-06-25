@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-25T04:55:41.147Z",
+  "generatedAt": "2026-06-25T05:03:04.017Z",
   "methodology": "自動證據初評，只用來排序人工複核優先級；最終分數仍須由 8 位專家依畫面、互動與來源逐項確認。",
   "summary": {
-    "audited": 38,
-    "heuristicPass": 14,
+    "audited": 39,
+    "heuristicPass": 15,
     "hasBlockers": 11,
-    "averageScore": 73
+    "averageScore": 74
   },
   "audits": [
     {
@@ -2432,6 +2432,71 @@
       "blockers": [],
       "priorities": [
         "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ssp-111-01-210-無鎖不在-外出行李箱防盜感測器",
+      "repo": "startup-luggage-guardian",
+      "project": "『無鎖不在』外出行李箱防盜感測器",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 98,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 8,
+        "visual": 10,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 21,
+        "listeners": 9,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": true,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "business",
         "market"
       ]
     },
