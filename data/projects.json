@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:23:27Z",
+  "generatedAt": "2026-06-25T04:30:32Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 35,
-    "publicPrototypeCount": 34,
+    "prototypeCount": 36,
+    "publicPrototypeCount": 35,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -1885,8 +1885,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "數位桌球技戰術記錄與分析平台：可實作為線上平台或管理系統，包含使用者流程、資料看板、媒合/預約、紀錄追蹤與成果分析。",
-      "prototypeRepo": null,
+      "implementationConcept": "讓教練在場邊快速標記發球、第三板、對手回球落點與得失分，賽後再依影片補記與排除低品質樣本；系統整理落點熱區、戰術組合和局間變化，洞察只建立訓練草稿，最後由教練確認負荷與成功條件後發給球員。",
+      "prototypeRepo": "../startup-table-tennis-tactics",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
