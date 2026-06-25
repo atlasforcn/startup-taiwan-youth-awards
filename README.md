@@ -9,13 +9,13 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品（公開 573 筆，隱藏 1 筆）
 - 可軟體實作候選：378 筆公開候選
-- 已公開原型 repo：37 筆（另 1 筆已隱藏）
+- 已公開原型 repo：38 筆（另 1 筆已隱藏）
 - 目前展示 Demo：[`Law 網之魚 — 法律科技分析，微型創業更安心`](https://atlasforcn.github.io/startup-lawfish-legaltech/)
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 37 個公開 demo repo 支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 38 個公開 demo repo 支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -148,6 +148,7 @@
 - `startup-table-tennis-tactics`：依 111 年創業歸故里 `數位桌球技戰術記錄與分析平台` 做出的場邊快速標記、落點熱區、戰術洞察、教練任務與賽後複盤工作台。
 - `startup-eatzy-healthy-map`：依 2024 Healthy × Happy `Eatzy健康餐地圖` 做出的健康元素篩選、附近餐點地圖、透明資料比較、客製預訂與餐後回饋平台。
 - `startup-carbon-footprint-action`：依 2023 Healthy × Happy 第一名 `碳足跡行動 APP` 做出的透明生活碳排估算、減碳任務、匿名團隊挑戰與企業參與報告平台。
+- `startup-doctor-chat-medication`：依 2023 Healthy × Happy `Doctor Chat LINE Bot` 做出的處方排程、語音本人確認、居家血壓紀錄、藥師／護理師人工升級與照護稽核平台。
 
 ## 已隱藏原型
 

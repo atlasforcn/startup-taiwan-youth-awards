@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-25T04:48:20.218Z",
+  "generatedAt": "2026-06-25T04:55:41.147Z",
   "methodology": "自動證據初評，只用來排序人工複核優先級；最終分數仍須由 8 位專家依畫面、互動與來源逐項確認。",
   "summary": {
-    "audited": 37,
-    "heuristicPass": 13,
+    "audited": 38,
+    "heuristicPass": 14,
     "hasBlockers": 11,
-    "averageScore": 72
+    "averageScore": 73
   },
   "audits": [
     {
@@ -2368,6 +2368,71 @@
       "priorities": [
         "market",
         "problem"
+      ]
+    },
+    {
+      "id": "healthyhappy-112-31-doctor-chat-line-bot-結合語音技術應用於慢性用藥輔助系統之開發與設計-以高血壓患者為例",
+      "repo": "startup-doctor-chat-medication",
+      "project": "結合語音技術應用於慢性用藥輔助系統之開發與設計-以高血壓患者為例",
+      "competition": "全國大專校院 Healthy x Happy 創新創業競賽",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 97,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 10,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 21,
+        "listeners": 12,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": true,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
       ]
     },
     {

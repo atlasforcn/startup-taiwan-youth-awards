@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:47:44Z",
+  "generatedAt": "2026-06-25T04:54:18Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 38,
-    "publicPrototypeCount": 37,
+    "prototypeCount": 39,
+    "publicPrototypeCount": 38,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -7504,8 +7504,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "結合語音技術應用於慢性用藥輔助系統之開發與設計-以高血壓患者為例：可實作為慢性病用藥提醒與語音互動助理，包含藥物排程、血壓紀錄、對話提醒與異常通知。",
-      "prototypeRepo": null,
+      "implementationConcept": "從醫療端已核對處方產生用藥排程，以大字與語音提醒並要求本人確認轉寫內容；漏服、不確定或用藥疑問建立藥師回電需求，居家血壓與警示症狀依規則送往護理師複核或 119，系統不提供補吃、加量、停藥或自動調藥建議。",
+      "prototypeRepo": "../startup-doctor-chat-medication",
       "notes": "官方得獎名單列出團隊「Doctor Chat LINE Bot」、作品「結合語音技術應用於慢性用藥輔助系統之開發與設計-以高血壓患者為例」；獎項為入選獎，禮券 0.1 萬元。"
     },
     {
