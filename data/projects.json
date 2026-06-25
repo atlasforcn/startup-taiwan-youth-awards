@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T21:53:40Z",
+  "generatedAt": "2026-06-25T04:11:12Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 31,
-    "publicPrototypeCount": 30,
+    "prototypeCount": 34,
+    "publicPrototypeCount": 33,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -353,8 +353,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "MOOVO智慧樁公共自行車系統：以物聯網與AI驅動智慧微交通，推動跨區串聯共榮新願景：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
-      "prototypeRepo": null,
+      "implementationConcept": "MOOVO 智慧微交通營運台：整合智慧樁、站點供需、90 分鐘需求預測、跨區調度、維運任務與場域成效；模型提出建議後仍需由調度員人工確認派工。",
+      "prototypeRepo": "../startup-moovo-micromobility",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
@@ -621,8 +621,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "空中護理站 - 用 AI 翻轉居家傷口照護：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
-      "prototypeRepo": null,
+      "implementationConcept": "空中護理站居家傷口照護協作台：結構化記錄症狀、體溫、疼痛與照片品質，以規則協助排序後交由護理師人工複核、聯繫與建立追蹤任務；不執行自動診斷。",
+      "prototypeRepo": "../startup-air-nursing-wound-care",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
@@ -825,8 +825,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "以AI影像辨識搭配雷射驅逐鳥獸蟲害：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
-      "prototypeRepo": null,
+      "implementationConcept": "以田間影像事件為入口，先呈現物種與模型信心，再由人員完成標籤複核、安全禁區與硬體互鎖檢查；雷射方法只建立雙人審查工作單，不直接連接設備，並以農損、誤報、人工時間與安全事件追蹤場域成效。",
+      "prototypeRepo": "../startup-ai-pest-deterrence",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
