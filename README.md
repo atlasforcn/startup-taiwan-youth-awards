@@ -9,13 +9,13 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品（公開 573 筆，隱藏 1 筆）
 - 可軟體實作候選：378 筆公開候選
-- 已公開原型 repo：39 筆（另 1 筆已隱藏）
+- 已公開原型 repo：40 筆（另 1 筆已隱藏）
 - 目前展示 Demo：[`Law 網之魚 — 法律科技分析，微型創業更安心`](https://atlasforcn.github.io/startup-lawfish-legaltech/)
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 39 個公開 demo repo 支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 40 個公開 demo repo 支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -51,6 +51,7 @@
 - 評審視角補強標準整理在 [`JUDGE_REVIEW.md`](JUDGE_REVIEW.md)，包含市場、驗證、商模、差異化、團隊執行與高風險邊界。
 - 8 位專家角色、100 分評分表與完成定義整理在 [`EXPERT_SYSTEM.md`](EXPERT_SYSTEM.md)。
 - 既有 30 個正式 demo 的優化批次與新增 10 個作品規劃整理在 [`DEMO_40_ROADMAP.md`](DEMO_40_ROADMAP.md)。
+- 40 個正式 demo 的最終驗收結果整理在 [`FINAL_40_AUDIT.md`](FINAL_40_AUDIT.md)：40 / 40 通過、0 個阻斷項目、平均 92 分。
 
 ## 比賽來源與官方來源
 
@@ -150,6 +151,7 @@
 - `startup-carbon-footprint-action`：依 2023 Healthy × Happy 第一名 `碳足跡行動 APP` 做出的透明生活碳排估算、減碳任務、匿名團隊挑戰與企業參與報告平台。
 - `startup-doctor-chat-medication`：依 2023 Healthy × Happy `Doctor Chat LINE Bot` 做出的處方排程、語音本人確認、居家血壓紀錄、藥師／護理師人工升級與照護稽核平台。
 - `startup-luggage-guardian`：依 111 年實戰模擬平臺 `『無鎖不在』外出行李箱防盜感測器` 做出的旅程綁定、異常事件確認、遺失模式、航空申報參考與資料包平台。
+- `startup-circular-clothing-workshop`：依 111 年實戰模擬平臺 `織衣工坊舊衣再生客製改造服務與循環租賃APP` 做出的衣物分流、設計提案、報價排程、循環衣櫥與商品護照平台。
 
 ## 已隱藏原型
 

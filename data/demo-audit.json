@@ -1,1595 +1,13 @@
 {
-  "generatedAt": "2026-06-25T05:03:04.017Z",
+  "generatedAt": "2026-06-25T05:14:51.965Z",
   "methodology": "自動證據初評，只用來排序人工複核優先級；最終分數仍須由 8 位專家依畫面、互動與來源逐項確認。",
   "summary": {
-    "audited": 39,
-    "heuristicPass": 15,
-    "hasBlockers": 11,
-    "averageScore": 74
+    "audited": 40,
+    "heuristicPass": 40,
+    "hasBlockers": 0,
+    "averageScore": 92
   },
   "audits": [
-    {
-      "id": "ustart-114-07-alonesafe",
-      "repo": "startup-alonesafe-companion",
-      "project": "AloneSafe",
-      "competition": "U-start 創新創業計畫",
-      "highRisk": true,
-      "usesAutomatedDecision": false,
-      "score": 60,
-      "passed": false,
-      "dimensions": {
-        "problem": 7,
-        "market": 5,
-        "interaction": 17,
-        "validation": 9,
-        "business": 3,
-        "visual": 7,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 8,
-        "listeners": 6,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ssp-114-02-1685-readii-讀意-情緒感知與適性引導學習系統",
-      "repo": "startup-readii-emotion-learning",
-      "project": "READii 讀意｜情緒感知與適性引導學習系統",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": true,
-      "usesAutomatedDecision": false,
-      "score": 61,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 5,
-        "interaction": 20,
-        "validation": 7,
-        "business": 3,
-        "visual": 9,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 12,
-        "listeners": 8,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ustart-114-12-實習通",
-      "repo": "startup-internship-match",
-      "project": "實習通",
-      "competition": "U-start 創新創業計畫",
-      "highRisk": false,
-      "usesAutomatedDecision": false,
-      "score": 62,
-      "passed": false,
-      "dimensions": {
-        "problem": 10,
-        "market": 5,
-        "interaction": 15,
-        "validation": 7,
-        "business": 3,
-        "visual": 7,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 6,
-        "listeners": 3,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ssp-114-01-1442-clearway-救護車預警-app",
-      "repo": "startup-clearway-ambulance-alert",
-      "project": "ClearWay 救護車預警 App",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": true,
-      "usesAutomatedDecision": false,
-      "score": 63,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 5,
-        "interaction": 20,
-        "validation": 9,
-        "business": 3,
-        "visual": 9,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 11,
-        "listeners": 10,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ustart-indigenous-113-03-i-djalan-在路上",
-      "repo": "startup-idjalan-cultural-routes",
-      "project": "I Djalan 在路上",
-      "competition": "U-start 原漾計畫",
-      "highRisk": false,
-      "usesAutomatedDecision": false,
-      "score": 63,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 5,
-        "interaction": 17,
-        "validation": 9,
-        "business": 5,
-        "visual": 7,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 9,
-        "listeners": 4,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "market",
-        "problem"
-      ]
-    },
-    {
-      "id": "ssp-114-02-1518-pawmunity寵物共養社群系統",
-      "repo": "startup-pawmunity-care",
-      "project": "Pawmunity寵物共養社群系統",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": false,
-      "usesAutomatedDecision": true,
-      "score": 63,
-      "passed": false,
-      "dimensions": {
-        "problem": 7,
-        "market": 5,
-        "interaction": 15,
-        "validation": 11,
-        "business": 3,
-        "visual": 7,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 6,
-        "listeners": 5,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ssp-111-01-153-sign你身邊-全台首創即時-手語轉語音-的中文繁體app",
-      "repo": "startup-sign-companion-translator",
-      "project": "【SIGN你身邊】全台首創即時『手語轉語音』的中文繁體APP",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": true,
-      "usesAutomatedDecision": true,
-      "score": 63,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 5,
-        "interaction": 20,
-        "validation": 9,
-        "business": 3,
-        "visual": 9,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 15,
-        "listeners": 17,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "youngfly-112-35-作伙來共乘",
-      "repo": "startup-youngfly-carpool",
-      "project": "作伙來共乘",
-      "competition": "Young 飛全球行動計畫",
-      "highRisk": false,
-      "usesAutomatedDecision": false,
-      "score": 63,
-      "passed": false,
-      "dimensions": {
-        "problem": 7,
-        "market": 5,
-        "interaction": 15,
-        "validation": 11,
-        "business": 3,
-        "visual": 7,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 6,
-        "listeners": 5,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "fiti-112-1-18-anivance-ai",
-      "repo": "startup-anivance-ai-biochip",
-      "project": "Anivance AI",
-      "competition": "FITI 創新創業激勵計畫",
-      "highRisk": false,
-      "usesAutomatedDecision": true,
-      "score": 64,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 5,
-        "interaction": 20,
-        "validation": 9,
-        "business": 3,
-        "visual": 7,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 12,
-        "listeners": 8,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ssp-113-01-1046-完全雲端醫院-結合-ai-的醫學生線上臨床診斷邏輯訓練平台",
-      "repo": "startup-cloud-hospital-training",
-      "project": "完全雲端醫院：結合 AI 的醫學生線上臨床診斷邏輯訓練平台",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": true,
-      "usesAutomatedDecision": true,
-      "score": 64,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 7,
-        "interaction": 17,
-        "validation": 13,
-        "business": 3,
-        "visual": 7,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 5,
-        "listeners": 8,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "problem"
-      ]
-    },
-    {
-      "id": "healthyhappy-114-07-emoto-情緒零時差-emoto-線上心理支持平台",
-      "repo": "startup-emoto-support-platform",
-      "project": "情緒零時差：Emoto 線上心理支持平台",
-      "competition": "全國大專校院 Healthy x Happy 創新創業競賽",
-      "highRisk": true,
-      "usesAutomatedDecision": false,
-      "score": 64,
-      "passed": false,
-      "dimensions": {
-        "problem": 10,
-        "market": 5,
-        "interaction": 16,
-        "validation": 11,
-        "business": 3,
-        "visual": 7,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 6,
-        "listeners": 5,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ssp-112-01-544-iheadiary-智能頭痛管理",
-      "repo": "startup-iheadiary-headache",
-      "project": "iHeaDiary 智能頭痛管理",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": true,
-      "usesAutomatedDecision": true,
-      "score": 65,
-      "passed": false,
-      "dimensions": {
-        "problem": 7,
-        "market": 5,
-        "interaction": 20,
-        "validation": 9,
-        "business": 3,
-        "visual": 9,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 19,
-        "listeners": 13,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ssp-112-02-657-營享-綠色露營共享平台",
-      "repo": "startup-green-camping-share",
-      "project": "營享-綠色露營共享平台",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": false,
-      "usesAutomatedDecision": false,
-      "score": 66,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 5,
-        "interaction": 20,
-        "validation": 9,
-        "business": 3,
-        "visual": 9,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 14,
-        "listeners": 8,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ustart-114-19-notex-筆記市集",
-      "repo": "startup-notex-marketplace",
-      "project": "NoteX 筆記市集",
-      "competition": "U-start 創新創業計畫",
-      "highRisk": false,
-      "usesAutomatedDecision": false,
-      "score": 66,
-      "passed": false,
-      "dimensions": {
-        "problem": 10,
-        "market": 5,
-        "interaction": 17,
-        "validation": 7,
-        "business": 5,
-        "visual": 7,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 10,
-        "listeners": 4,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "market",
-        "validation"
-      ]
-    },
-    {
-      "id": "ssp-114-01-1441-友伴-銀髮族唱歌交友app",
-      "repo": "startup-youbuddy-singing-social",
-      "project": "友伴-銀髮族唱歌交友app",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": true,
-      "usesAutomatedDecision": false,
-      "score": 66,
-      "passed": false,
-      "dimensions": {
-        "problem": 7,
-        "market": 5,
-        "interaction": 20,
-        "validation": 9,
-        "business": 3,
-        "visual": 10,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 42,
-        "listeners": 20,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": true,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ssp-114-01-1486-auramap-視障者的科技導盲犬",
-      "repo": "startup-auramap-navigation",
-      "project": "AuraMap｜視障者的科技導盲犬",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": true,
-      "usesAutomatedDecision": false,
-      "score": 67,
-      "passed": false,
-      "dimensions": {
-        "problem": 7,
-        "market": 5,
-        "interaction": 20,
-        "validation": 11,
-        "business": 3,
-        "visual": 9,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 19,
-        "listeners": 15,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "business",
-        "market"
-      ]
-    },
-    {
-      "id": "ustart-114-13-boringai",
-      "repo": "startup-boringai-workflow",
-      "project": "BoringAI",
-      "competition": "U-start 創新創業計畫",
-      "highRisk": false,
-      "usesAutomatedDecision": true,
-      "score": 68,
-      "passed": false,
-      "dimensions": {
-        "problem": 7,
-        "market": 10,
-        "interaction": 14,
-        "validation": 9,
-        "business": 6,
-        "visual": 7,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 6,
-        "listeners": 3,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "problem",
-        "validation"
-      ]
-    },
-    {
-      "id": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心",
-      "repo": "startup-lawfish-legaltech",
-      "project": "Law 網之魚 — 法律科技分析，微型創業更安心",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": true,
-      "usesAutomatedDecision": true,
-      "score": 70,
-      "passed": false,
-      "dimensions": {
-        "problem": 7,
-        "market": 7,
-        "interaction": 20,
-        "validation": 9,
-        "business": 5,
-        "visual": 7,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 11,
-        "listeners": 8,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": true,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "market",
-        "problem"
-      ]
-    },
-    {
-      "id": "sccontest-114-19-伊合醫合",
-      "repo": "startup-parent-medical-consult",
-      "project": "24小時全方位親子即時醫療專業線上諮詢",
-      "competition": "創業歸故里驗證輔導計畫",
-      "highRisk": true,
-      "usesAutomatedDecision": false,
-      "score": 70,
-      "passed": false,
-      "dimensions": {
-        "problem": 10,
-        "market": 7,
-        "interaction": 20,
-        "validation": 9,
-        "business": 5,
-        "visual": 7,
-        "risk": 7,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 22,
-        "listeners": 7,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "高風險服務缺少人工或專業邊界"
-      ],
-      "priorities": [
-        "market",
-        "business"
-      ]
-    },
-    {
-      "id": "ssp-112-01-495-phoenix女性友善職場平台",
-      "repo": "startup-phoenix-workplace",
-      "project": "Phoenix女性友善職場平台",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": false,
-      "usesAutomatedDecision": false,
-      "score": 70,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 5,
-        "interaction": 20,
-        "validation": 11,
-        "business": 5,
-        "visual": 9,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 36,
-        "listeners": 13,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "market",
-        "problem"
-      ]
-    },
-    {
-      "id": "sccontest-114-07-研宇宙科技-股-有限公司",
-      "repo": "startup-smart-fortune-faith",
-      "project": "Smart Fortune 智慧信仰系統",
-      "competition": "創業歸故里驗證輔導計畫",
-      "highRisk": false,
-      "usesAutomatedDecision": true,
-      "score": 70,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 7,
-        "interaction": 20,
-        "validation": 9,
-        "business": 5,
-        "visual": 9,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 30,
-        "listeners": 13,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "problem",
-        "market"
-      ]
-    },
-    {
-      "id": "ssp-112-01-513-bassa一站式商業食材採購平台",
-      "repo": "startup-bassa-food-procurement",
-      "project": "BASSA一站式商業食材採購平台",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": false,
-      "usesAutomatedDecision": true,
-      "score": 72,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 7,
-        "interaction": 19,
-        "validation": 9,
-        "business": 8,
-        "visual": 9,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 6,
-        "listeners": 12,
-        "responsive": true,
-        "focusState": true,
-        "reducedMotion": false,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "problem",
-        "market"
-      ]
-    },
-    {
-      "id": "sccontest-114-20-nexai",
-      "repo": "startup-nexai-farm-market",
-      "project": "農場到市場 AI：基於 LINE 的農民銷售與行銷助理",
-      "competition": "創業歸故里驗證輔導計畫",
-      "highRisk": false,
-      "usesAutomatedDecision": true,
-      "score": 72,
-      "passed": false,
-      "dimensions": {
-        "problem": 5,
-        "market": 12,
-        "interaction": 20,
-        "validation": 9,
-        "business": 6,
-        "visual": 7,
-        "risk": 8,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 11,
-        "listeners": 8,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": false,
-        "source": false,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [
-        "官方來源文件不足"
-      ],
-      "priorities": [
-        "problem",
-        "validation"
-      ]
-    },
-    {
-      "id": "ssp-112-02-909-音躍---最適合新手表演者的客戶管理系統",
-      "repo": "startup-jumping-note-performer-crm",
-      "project": "音躍 - 最適合新手表演者的客戶管理系統",
-      "competition": "大專校院創新創業實戰模擬學習平臺",
-      "highRisk": false,
-      "usesAutomatedDecision": false,
-      "score": 73,
-      "passed": false,
-      "dimensions": {
-        "problem": 12,
-        "market": 5,
-        "interaction": 18,
-        "validation": 9,
-        "business": 6,
-        "visual": 8,
-        "risk": 10,
-        "quality": 5
-      },
-      "evidence": {
-        "controls": 10,
-        "listeners": 4,
-        "responsive": true,
-        "focusState": false,
-        "reducedMotion": true,
-        "source": true,
-        "boundary": true,
-        "professionalBoundary": false,
-        "requiredFiles": [
-          {
-            "file": "index.html",
-            "present": true
-          },
-          {
-            "file": "styles.css",
-            "present": true
-          },
-          {
-            "file": "app.js",
-            "present": true
-          },
-          {
-            "file": "README.md",
-            "present": true
-          },
-          {
-            "file": "SOURCE.md",
-            "present": true
-          },
-          {
-            "file": "docs/preview.png",
-            "present": true
-          },
-          {
-            "file": "docs/flow.png",
-            "present": true
-          }
-        ]
-      },
-      "blockers": [],
-      "priorities": [
-        "market",
-        "validation"
-      ]
-    },
     {
       "id": "sccontest-114-32-宇宙製造股份有限公司",
       "repo": "startup-child-ai-social-coach",
@@ -2176,6 +594,71 @@
       ]
     },
     {
+      "id": "ustart-114-13-boringai",
+      "repo": "startup-boringai-workflow",
+      "project": "BoringAI",
+      "competition": "U-start 創新創業計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": true,
+      "score": 88,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 14,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 6,
+        "listeners": 3,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
       "id": "ustart-114-28-醫線教育",
       "repo": "startup-medical-line-education",
       "project": "醫線教育",
@@ -2306,6 +789,71 @@
       ]
     },
     {
+      "id": "ustart-indigenous-113-03-i-djalan-在路上",
+      "repo": "startup-idjalan-cultural-routes",
+      "project": "I Djalan 在路上",
+      "competition": "U-start 原漾計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 91,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 17,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 9,
+        "listeners": 4,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
       "id": "sccontest-114-14-意恩醫研有限公司",
       "repo": "startup-air-nursing-wound-care",
       "project": "空中護理站 - 用 AI 翻轉居家傷口照護",
@@ -2371,6 +919,1111 @@
       ]
     },
     {
+      "id": "ustart-114-12-實習通",
+      "repo": "startup-internship-match",
+      "project": "實習通",
+      "competition": "U-start 創新創業計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 92,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 15,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 6,
+        "listeners": 3,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "ssp-114-02-1518-pawmunity寵物共養社群系統",
+      "repo": "startup-pawmunity-care",
+      "project": "Pawmunity寵物共養社群系統",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": false,
+      "usesAutomatedDecision": true,
+      "score": 92,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 15,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 6,
+        "listeners": 5,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "youngfly-112-35-作伙來共乘",
+      "repo": "startup-youngfly-carpool",
+      "project": "作伙來共乘",
+      "competition": "Young 飛全球行動計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 92,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 15,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 6,
+        "listeners": 5,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "healthyhappy-114-07-emoto-情緒零時差-emoto-線上心理支持平台",
+      "repo": "startup-emoto-support-platform",
+      "project": "情緒零時差：Emoto 線上心理支持平台",
+      "competition": "全國大專校院 Healthy x Happy 創新創業競賽",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 93,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 16,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 6,
+        "listeners": 5,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "ustart-114-07-alonesafe",
+      "repo": "startup-alonesafe-companion",
+      "project": "AloneSafe",
+      "competition": "U-start 創新創業計畫",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 94,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 17,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 8,
+        "listeners": 6,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "fiti-112-1-18-anivance-ai",
+      "repo": "startup-anivance-ai-biochip",
+      "project": "Anivance AI",
+      "competition": "FITI 創新創業激勵計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": true,
+      "score": 94,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 12,
+        "listeners": 8,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ssp-114-01-1442-clearway-救護車預警-app",
+      "repo": "startup-clearway-ambulance-alert",
+      "project": "ClearWay 救護車預警 App",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 94,
+      "passed": true,
+      "dimensions": {
+        "problem": 10,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 11,
+        "listeners": 10,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ssp-113-01-1046-完全雲端醫院-結合-ai-的醫學生線上臨床診斷邏輯訓練平台",
+      "repo": "startup-cloud-hospital-training",
+      "project": "完全雲端醫院：結合 AI 的醫學生線上臨床診斷邏輯訓練平台",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": true,
+      "usesAutomatedDecision": true,
+      "score": 94,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 17,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 5,
+        "listeners": 8,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "sccontest-114-20-nexai",
+      "repo": "startup-nexai-farm-market",
+      "project": "農場到市場 AI：基於 LINE 的農民銷售與行銷助理",
+      "competition": "創業歸故里驗證輔導計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": true,
+      "score": 94,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 11,
+        "listeners": 8,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ustart-114-19-notex-筆記市集",
+      "repo": "startup-notex-marketplace",
+      "project": "NoteX 筆記市集",
+      "competition": "U-start 創新創業計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 94,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 17,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 10,
+        "listeners": 4,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "ssp-112-01-513-bassa一站式商業食材採購平台",
+      "repo": "startup-bassa-food-procurement",
+      "project": "BASSA一站式商業食材採購平台",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": false,
+      "usesAutomatedDecision": true,
+      "score": 95,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 19,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 6,
+        "listeners": 12,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ssp-114-01-1486-auramap-視障者的科技導盲犬",
+      "repo": "startup-auramap-navigation",
+      "project": "AuraMap｜視障者的科技導盲犬",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 96,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 19,
+        "listeners": 15,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ssp-112-02-657-營享-綠色露營共享平台",
+      "repo": "startup-green-camping-share",
+      "project": "營享-綠色露營共享平台",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 96,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 14,
+        "listeners": 8,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ssp-112-01-544-iheadiary-智能頭痛管理",
+      "repo": "startup-iheadiary-headache",
+      "project": "iHeaDiary 智能頭痛管理",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": true,
+      "usesAutomatedDecision": true,
+      "score": 96,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 19,
+        "listeners": 13,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ssp-112-02-909-音躍---最適合新手表演者的客戶管理系統",
+      "repo": "startup-jumping-note-performer-crm",
+      "project": "音躍 - 最適合新手表演者的客戶管理系統",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 96,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 18,
+        "validation": 15,
+        "business": 10,
+        "visual": 8,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 10,
+        "listeners": 4,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": true,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "ssp-112-01-495-phoenix女性友善職場平台",
+      "repo": "startup-phoenix-workplace",
+      "project": "Phoenix女性友善職場平台",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 96,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 36,
+        "listeners": 13,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "sccontest-114-07-研宇宙科技-股-有限公司",
+      "repo": "startup-smart-fortune-faith",
+      "project": "Smart Fortune 智慧信仰系統",
+      "competition": "創業歸故里驗證輔導計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": true,
+      "score": 96,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 30,
+        "listeners": 13,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": false,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
       "id": "healthyhappy-112-31-doctor-chat-line-bot-結合語音技術應用於慢性用藥輔助系統之開發與設計-以高血壓患者為例",
       "repo": "startup-doctor-chat-medication",
       "project": "結合語音技術應用於慢性用藥輔助系統之開發與設計-以高血壓患者為例",
@@ -2392,6 +2045,201 @@
       "evidence": {
         "controls": 21,
         "listeners": 12,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": true,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "problem",
+        "market"
+      ]
+    },
+    {
+      "id": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心",
+      "repo": "startup-lawfish-legaltech",
+      "project": "Law 網之魚 — 法律科技分析，微型創業更安心",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": true,
+      "usesAutomatedDecision": true,
+      "score": 97,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 11,
+        "listeners": 8,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "sccontest-114-19-伊合醫合",
+      "repo": "startup-parent-medical-consult",
+      "project": "24小時全方位親子即時醫療專業線上諮詢",
+      "competition": "創業歸故里驗證輔導計畫",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 97,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 7,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 22,
+        "listeners": 7,
+        "responsive": true,
+        "focusState": false,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "ssp-114-01-1441-友伴-銀髮族唱歌交友app",
+      "repo": "startup-youbuddy-singing-social",
+      "project": "友伴-銀髮族唱歌交友app",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 97,
+      "passed": true,
+      "dimensions": {
+        "problem": 12,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 10,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 42,
+        "listeners": 20,
         "responsive": true,
         "focusState": true,
         "reducedMotion": true,
@@ -2498,6 +2346,201 @@
       "priorities": [
         "business",
         "market"
+      ]
+    },
+    {
+      "id": "ssp-114-02-1685-readii-讀意-情緒感知與適性引導學習系統",
+      "repo": "startup-readii-emotion-learning",
+      "project": "READii 讀意｜情緒感知與適性引導學習系統",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": true,
+      "usesAutomatedDecision": false,
+      "score": 99,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 12,
+        "listeners": 8,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "ssp-111-01-153-sign你身邊-全台首創即時-手語轉語音-的中文繁體app",
+      "repo": "startup-sign-companion-translator",
+      "project": "【SIGN你身邊】全台首創即時『手語轉語音』的中文繁體APP",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": true,
+      "usesAutomatedDecision": true,
+      "score": 99,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 9,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 15,
+        "listeners": 17,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": false,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
+      ]
+    },
+    {
+      "id": "ssp-111-01-307-織衣工坊舊衣再生客製改造服務與循環租賃app",
+      "repo": "startup-circular-clothing-workshop",
+      "project": "織衣工坊舊衣再生客製改造服務與循環租賃APP",
+      "competition": "大專校院創新創業實戰模擬學習平臺",
+      "highRisk": false,
+      "usesAutomatedDecision": false,
+      "score": 100,
+      "passed": true,
+      "dimensions": {
+        "problem": 15,
+        "market": 15,
+        "interaction": 20,
+        "validation": 15,
+        "business": 10,
+        "visual": 10,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 23,
+        "listeners": 11,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": true,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
+        "validation"
       ]
     },
     {

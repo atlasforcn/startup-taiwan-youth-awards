@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T05:01:44Z",
+  "generatedAt": "2026-06-25T05:10:17Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 40,
-    "publicPrototypeCount": 39,
+    "prototypeCount": 41,
+    "publicPrototypeCount": 40,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -6490,8 +6490,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "織衣工坊舊衣再生客製改造服務與循環租賃APP：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
+      "implementationConcept": "輸入衣物類型、材質、污損、結構與情感故事，先分流維修續穿、客製改造、循環租賃或材料回收；設計師完成實物檢查後提出工法、工時、價格與後續去向，合格改造品可進入具清潔、維修與退役紀錄的循環衣櫥。",
+      "prototypeRepo": "../startup-circular-clothing-workshop",
       "notes": "官方成功案例頁列出團隊「織飾份子」；教練注資額 4,684,000、民眾注資額 5,025,000、總創新幣 9,709,000。"
     },
     {
