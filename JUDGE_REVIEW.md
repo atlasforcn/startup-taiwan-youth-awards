@@ -34,4 +34,8 @@
 
 - 已處理：通用首屏縮版、低調原型聲明、Smart Fortune 導覽收合與來源折疊。
 - 已處理：LawFish 法律邊界與導覽行為、Captain Guide 預約容量邏輯、I Djalan 輸入安全、YouBuddy 版權風險歌詞替換、BASSA 過期批次日期。
-- 後續優先：Anivance、RAG、BoringAI、ClearWay、SIGN、Medical Line 需要更強的驗證紀錄、模型/資料來源或非正式服務邊界。
+- 已處理：RAGtimAIze 已補逐句引用、衝突文件、反例驗證、人工部署門檻、商業模式與稽核紀錄。
+- 已處理：Medical Line 已補教育用途邊界、作答信心校準、教師複核、學習驗證與商業模式。
+- 已處理：AI 農害驅離原型已補人工標籤複核、安全禁區、雙階段互鎖、雷射雙人審查與「不連接硬體」邊界。
+- 已完成：新增 10 個正式作品，總數達 40 個公開 demo；每個新增作品均有來源、專家評審、桌機／行動版與核心互動驗收。
+- 後續優先：Anivance、BoringAI、ClearWay、SIGN 需要更強的驗證紀錄、模型/資料來源或非正式服務邊界。

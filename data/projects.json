@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T21:53:40Z",
+  "generatedAt": "2026-06-25T05:10:17Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 31,
-    "publicPrototypeCount": 30,
+    "prototypeCount": 41,
+    "publicPrototypeCount": 40,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -353,8 +353,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "MOOVO智慧樁公共自行車系統：以物聯網與AI驅動智慧微交通，推動跨區串聯共榮新願景：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
-      "prototypeRepo": null,
+      "implementationConcept": "MOOVO 智慧微交通營運台：整合智慧樁、站點供需、90 分鐘需求預測、跨區調度、維運任務與場域成效；模型提出建議後仍需由調度員人工確認派工。",
+      "prototypeRepo": "../startup-moovo-micromobility",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
@@ -621,8 +621,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "空中護理站 - 用 AI 翻轉居家傷口照護：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
-      "prototypeRepo": null,
+      "implementationConcept": "空中護理站居家傷口照護協作台：結構化記錄症狀、體溫、疼痛與照片品質，以規則協助排序後交由護理師人工複核、聯繫與建立追蹤任務；不執行自動診斷。",
+      "prototypeRepo": "../startup-air-nursing-wound-care",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
@@ -825,8 +825,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "以AI影像辨識搭配雷射驅逐鳥獸蟲害：可實作為 AI 輔助平台，包含資料輸入、模型/規則建議、任務追蹤、成效儀表板與場域回饋。",
-      "prototypeRepo": null,
+      "implementationConcept": "以田間影像事件為入口，先呈現物種與模型信心，再由人員完成標籤複核、安全禁區與硬體互鎖檢查；雷射方法只建立雙人審查工作單，不直接連接設備，並以農損、誤報、人工時間與安全事件追蹤場域成效。",
+      "prototypeRepo": "../startup-ai-pest-deterrence",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
@@ -1863,8 +1863,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "Basepara智慧棒球運科訓練系統：可實作為線上平台或管理系統，包含使用者流程、資料看板、媒合/預約、紀錄追蹤與成果分析。",
-      "prototypeRepo": null,
+      "implementationConcept": "以球員個人基準與本次動作／球路檢測為入口，依投球分期呈現影像可用度和系統線索，再由教練儲存判讀、選擇訓練練習、核准 14 日課表並安排複測；長期履歷同時追蹤表現、穩定性、課表完成與不適回報。",
+      "prototypeRepo": "../startup-basepara-baseball",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
@@ -1885,8 +1885,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "數位桌球技戰術記錄與分析平台：可實作為線上平台或管理系統，包含使用者流程、資料看板、媒合/預約、紀錄追蹤與成果分析。",
-      "prototypeRepo": null,
+      "implementationConcept": "讓教練在場邊快速標記發球、第三板、對手回球落點與得失分，賽後再依影片補記與排除低品質樣本；系統整理落點熱區、戰術組合和局間變化，洞察只建立訓練草稿，最後由教練確認負荷與成功條件後發給球員。",
+      "prototypeRepo": "../startup-table-tennis-tactics",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {
@@ -5894,8 +5894,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "行李追蹤與理賠平台：整合航空行李狀態、理賠申請、AR 尺寸測量、自助機台與通知流程。",
-      "prototypeRepo": null,
+      "implementationConcept": "在出發前綁定航班、行李牌、行李外觀與近距離感測器；移動或斷線事件先由旅客確認情境，找不到行李時才啟用事件時間線，並立即向航空公司或機場櫃檯取得申報參考編號，再整理照片、行李牌、事件與收據成資料包。原型不是 GPS、航空官方追蹤、報案或理賠系統。",
+      "prototypeRepo": "../startup-luggage-guardian",
       "notes": "官方成功案例頁列出團隊「SuperTony」；教練注資額 2,100,000、民眾注資額 4,160,192、總創新幣 6,260,192。"
     },
     {
@@ -6490,8 +6490,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "織衣工坊舊衣再生客製改造服務與循環租賃APP：可實作為資料化工作台，包含使用者/場域資料、任務流程、AI 或規則分析、通知提醒、成效儀表板與成果紀錄。",
-      "prototypeRepo": null,
+      "implementationConcept": "輸入衣物類型、材質、污損、結構與情感故事，先分流維修續穿、客製改造、循環租賃或材料回收；設計師完成實物檢查後提出工法、工時、價格與後續去向，合格改造品可進入具清潔、維修與退役紀錄的循環衣櫥。",
+      "prototypeRepo": "../startup-circular-clothing-workshop",
       "notes": "官方成功案例頁列出團隊「織飾份子」；教練注資額 4,684,000、民眾注資額 5,025,000、總創新幣 9,709,000。"
     },
     {
@@ -7174,8 +7174,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "Eatzy健康餐地圖：可實作為健康餐飲推薦與外送平台，包含飲食偏好、營養標籤、地圖搜尋、訂餐與健康目標追蹤。",
-      "prototypeRepo": null,
+      "implementationConcept": "以地點和今天在意的健康元素篩選附近餐點，呈現距離、價格、餐盤元素、資料來源與更新日期；使用者可比較最多兩份餐點、設定份量與醬料後送出預訂，餐後回饋只用於調整偏好與可行性，不提供醫療或疾病飲食處方。",
+      "prototypeRepo": "../startup-eatzy-healthy-map",
       "notes": "官方得獎名單列出團隊「飯飯之交」、作品「Eatzy健康餐地圖」；獎項為優勝獎，禮券 0.5 萬元。"
     },
     {
@@ -7284,8 +7284,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "碳足跡 App：日常行為紀錄、碳排估算、減碳任務、社群挑戰與個人化建議。",
-      "prototypeRepo": null,
+      "implementationConcept": "記錄交通、飲食、住宅與消費活動量，逐筆顯示示範排放係數、資料年份與不確定性，再依個人四週基準建立可持續的減碳任務；組織挑戰只彙整匿名完成次數與估算減量，並明確區分生活估算、企業 Scope 1–3 盤查與碳中和宣稱。",
+      "prototypeRepo": "../startup-carbon-footprint-action",
       "notes": "官方得獎名單列出團隊「綠色行動者」、作品「碳足跡行動 APP Carbon Footprint App」；獎項為第一名，禮券 2.5 萬元。"
     },
     {
@@ -7504,8 +7504,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "結合語音技術應用於慢性用藥輔助系統之開發與設計-以高血壓患者為例：可實作為慢性病用藥提醒與語音互動助理，包含藥物排程、血壓紀錄、對話提醒與異常通知。",
-      "prototypeRepo": null,
+      "implementationConcept": "從醫療端已核對處方產生用藥排程，以大字與語音提醒並要求本人確認轉寫內容；漏服、不確定或用藥疑問建立藥師回電需求，居家血壓與警示症狀依規則送往護理師複核或 119，系統不提供補吃、加量、停藥或自動調藥建議。",
+      "prototypeRepo": "../startup-doctor-chat-medication",
       "notes": "官方得獎名單列出團隊「Doctor Chat LINE Bot」、作品「結合語音技術應用於慢性用藥輔助系統之開發與設計-以高血壓患者為例」；獎項為入選獎，禮券 0.1 萬元。"
     },
     {

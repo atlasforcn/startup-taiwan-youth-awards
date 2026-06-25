@@ -9,13 +9,13 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品（公開 573 筆，隱藏 1 筆）
 - 可軟體實作候選：378 筆公開候選
-- 已公開原型 repo：30 筆（另 1 筆已隱藏）
+- 已公開原型 repo：40 筆（另 1 筆已隱藏）
 - 目前展示 Demo：[`Law 網之魚 — 法律科技分析，微型創業更安心`](https://atlasforcn.github.io/startup-lawfish-legaltech/)
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 30 個公開 demo repo 支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 40 個公開 demo repo 支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -49,6 +49,9 @@
 - 官方來源、得獎資料與聲明必須保留且可查證，但應使用低調摘要、折疊區塊或頁尾輔助區呈現，避免佔用主要版面。
 - 長資訊列表、來源分類與維護說明不放在第一視覺主角位置；若需要放在同頁，預設收合或縮成輔助欄。
 - 評審視角補強標準整理在 [`JUDGE_REVIEW.md`](JUDGE_REVIEW.md)，包含市場、驗證、商模、差異化、團隊執行與高風險邊界。
+- 8 位專家角色、100 分評分表與完成定義整理在 [`EXPERT_SYSTEM.md`](EXPERT_SYSTEM.md)。
+- 既有 30 個正式 demo 的優化批次與新增 10 個作品規劃整理在 [`DEMO_40_ROADMAP.md`](DEMO_40_ROADMAP.md)。
+- 40 個正式 demo 的最終驗收結果整理在 [`FINAL_40_AUDIT.md`](FINAL_40_AUDIT.md)：40 / 40 通過、0 個阻斷項目、平均 92 分。
 
 ## 比賽來源與官方來源
 
@@ -136,6 +139,19 @@
 - `startup-phoenix-workplace`：依 112 年實戰模擬平臺 `Phoenix女性友善職場平台` 做出的女性友善職場評估、職缺媒合與改善追蹤平台。
 - `startup-green-camping-share`：依 112 年實戰模擬平臺 `營享-綠色露營共享平台` 做出的露營用品共享、營地媒合與碳減量估算平台。
 - `startup-jumping-note-performer-crm`：依 112 年實戰模擬平臺 `音躍 - 最適合新手表演者的客戶管理系統` 做出的新手表演者演出 CRM。
+
+## 本輪新增公開原型
+
+- `startup-moovo-micromobility`：依 114 年創業歸故里 `MOOVO智慧樁公共自行車系統：以物聯網與AI驅動智慧微交通，推動跨區串聯共榮新願景` 做出的站點需求預測、跨區調度、維運與場域成效工作台。
+- `startup-air-nursing-wound-care`：依 114 年創業歸故里 `空中護理站－用 AI 翻轉居家傷口照護` 做出的居家紀錄、風險排序、護理師人工複核與追蹤協作台。
+- `startup-ai-pest-deterrence`：依 114 年創業歸故里 `以AI影像辨識搭配雷射驅逐鳥獸蟲害` 做出的事件辨識、人工標籤、安全互鎖、雙人審查與場域成效控制台；原型不連接或控制實體雷射設備。
+- `startup-basepara-baseball`：依 111 年創業歸故里 `Basepara智慧棒球運科訓練系統` 做出的動作分期、個人基準、教練判讀、訓練處方與複測履歷工作台。
+- `startup-table-tennis-tactics`：依 111 年創業歸故里 `數位桌球技戰術記錄與分析平台` 做出的場邊快速標記、落點熱區、戰術洞察、教練任務與賽後複盤工作台。
+- `startup-eatzy-healthy-map`：依 2024 Healthy × Happy `Eatzy健康餐地圖` 做出的健康元素篩選、附近餐點地圖、透明資料比較、客製預訂與餐後回饋平台。
+- `startup-carbon-footprint-action`：依 2023 Healthy × Happy 第一名 `碳足跡行動 APP` 做出的透明生活碳排估算、減碳任務、匿名團隊挑戰與企業參與報告平台。
+- `startup-doctor-chat-medication`：依 2023 Healthy × Happy `Doctor Chat LINE Bot` 做出的處方排程、語音本人確認、居家血壓紀錄、藥師／護理師人工升級與照護稽核平台。
+- `startup-luggage-guardian`：依 111 年實戰模擬平臺 `『無鎖不在』外出行李箱防盜感測器` 做出的旅程綁定、異常事件確認、遺失模式、航空申報參考與資料包平台。
+- `startup-circular-clothing-workshop`：依 111 年實戰模擬平臺 `織衣工坊舊衣再生客製改造服務與循環租賃APP` 做出的衣物分流、設計提案、報價排程、循環衣櫥與商品護照平台。
 
 ## 已隱藏原型
 
