@@ -9,13 +9,13 @@
 - 屆次：110、111、112、113、114 年度官方績優/得獎/成功案例團隊
 - 收錄：574 筆作品（公開 573 筆，隱藏 1 筆）
 - 可軟體實作候選：378 筆公開候選
-- 已公開原型 repo：30 筆（另 1 筆已隱藏）
+- 已公開原型 repo：33 筆（另 1 筆已隱藏）
 - 目前展示 Demo：[`Law 網之魚 — 法律科技分析，微型創業更安心`](https://atlasforcn.github.io/startup-lawfish-legaltech/)
 - GitHub Pages：https://atlasforcn.github.io/startup-taiwan-youth-awards/
 
 ## GitHub 分類命名
 
-- GitHub owner：`atlasforcn`；主網站與 30 個公開 demo repo 支援 GitHub Pages 瀏覽。
+- GitHub owner：`atlasforcn`；主網站與 33 個公開 demo repo 支援 GitHub Pages 瀏覽。
 - 主整理網站 repo：[`startup-taiwan-youth-awards`](https://github.com/atlasforcn/startup-taiwan-youth-awards)
 - 主整理網站 Pages：[`https://atlasforcn.github.io/startup-taiwan-youth-awards/`](https://atlasforcn.github.io/startup-taiwan-youth-awards/)
 - 原型 repo 命名：一律使用 `startup-xxxxx`，每個可實作作品各自獨立一個 repo。
@@ -139,7 +139,7 @@
 - `startup-green-camping-share`：依 112 年實戰模擬平臺 `營享-綠色露營共享平台` 做出的露營用品共享、營地媒合與碳減量估算平台。
 - `startup-jumping-note-performer-crm`：依 112 年實戰模擬平臺 `音躍 - 最適合新手表演者的客戶管理系統` 做出的新手表演者演出 CRM。
 
-## 已完成待發布原型
+## 本輪新增公開原型
 
 - `startup-moovo-micromobility`：依 114 年創業歸故里 `MOOVO智慧樁公共自行車系統：以物聯網與AI驅動智慧微交通，推動跨區串聯共榮新願景` 做出的站點需求預測、跨區調度、維運與場域成效工作台。
 - `startup-air-nursing-wound-care`：依 114 年創業歸故里 `空中護理站－用 AI 翻轉居家傷口照護` 做出的居家紀錄、風險排序、護理師人工複核與追蹤協作台。
