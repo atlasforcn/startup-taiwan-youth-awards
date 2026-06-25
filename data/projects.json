@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:11:12Z",
+  "generatedAt": "2026-06-25T04:23:27Z",
   "scopeNote": "目前主資料源為 U-start 創新創業計畫、U-start 原漾計畫、Young 飛全球行動計畫、創業歸故里驗證輔導計畫、FITI 創新創業激勵計畫、大專校院創新創業實戰模擬學習平臺與 Healthy x Happy 創新創業競賽近五年（110-114）官方績優/得獎/成功案例資料。部分欄位依官方名單可得資訊保守標記。",
   "competitions": [
     {
@@ -308,8 +308,8 @@
     "hiddenProjectCount": 1,
     "softwareCandidateCount": 379,
     "publicSoftwareCandidateCount": 378,
-    "prototypeCount": 34,
-    "publicPrototypeCount": 33,
+    "prototypeCount": 35,
+    "publicPrototypeCount": 34,
     "featuredDemoId": "ssp-114-01-1398-law-網之魚-—-法律科技分析-微型創業更安心"
   },
   "projects": [
@@ -1863,8 +1863,8 @@
       "sourceReliability": "official",
       "softwareCandidate": true,
       "softwareConfidence": "明確",
-      "implementationConcept": "Basepara智慧棒球運科訓練系統：可實作為線上平台或管理系統，包含使用者流程、資料看板、媒合/預約、紀錄追蹤與成果分析。",
-      "prototypeRepo": null,
+      "implementationConcept": "以球員個人基準與本次動作／球路檢測為入口，依投球分期呈現影像可用度和系統線索，再由教練儲存判讀、選擇訓練練習、核准 14 日課表並安排複測；長期履歷同時追蹤表現、穩定性、課表完成與不適回報。",
+      "prototypeRepo": "../startup-basepara-baseball",
       "notes": "官方「晉級與得獎名單」頁面欄位包含獎勵/名次、縣市場域、公司/團隊名稱與提案名稱；本筆僅整理最終得獎或成果評選獎勵名單。"
     },
     {

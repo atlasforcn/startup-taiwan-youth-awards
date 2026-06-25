@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-25T04:12:07.578Z",
+  "generatedAt": "2026-06-25T04:24:10.597Z",
   "methodology": "自動證據初評，只用來排序人工複核優先級；最終分數仍須由 8 位專家依畫面、互動與來源逐項確認。",
   "summary": {
-    "audited": 33,
-    "heuristicPass": 9,
+    "audited": 34,
+    "heuristicPass": 10,
     "hasBlockers": 11,
-    "averageScore": 71
+    "averageScore": 72
   },
   "audits": [
     {
@@ -1912,6 +1912,71 @@
       "blockers": [],
       "priorities": [
         "business",
+        "problem"
+      ]
+    },
+    {
+      "id": "sccontest-111-70-鈞泰運動數位科技",
+      "repo": "startup-basepara-baseball",
+      "project": "Basepara智慧棒球運科訓練系統",
+      "competition": "創業歸故里驗證輔導計畫",
+      "highRisk": false,
+      "usesAutomatedDecision": true,
+      "score": 88,
+      "passed": true,
+      "dimensions": {
+        "problem": 10,
+        "market": 10,
+        "interaction": 20,
+        "validation": 15,
+        "business": 8,
+        "visual": 10,
+        "risk": 10,
+        "quality": 5
+      },
+      "evidence": {
+        "controls": 15,
+        "listeners": 6,
+        "responsive": true,
+        "focusState": true,
+        "reducedMotion": true,
+        "source": true,
+        "boundary": true,
+        "professionalBoundary": true,
+        "requiredFiles": [
+          {
+            "file": "index.html",
+            "present": true
+          },
+          {
+            "file": "styles.css",
+            "present": true
+          },
+          {
+            "file": "app.js",
+            "present": true
+          },
+          {
+            "file": "README.md",
+            "present": true
+          },
+          {
+            "file": "SOURCE.md",
+            "present": true
+          },
+          {
+            "file": "docs/preview.png",
+            "present": true
+          },
+          {
+            "file": "docs/flow.png",
+            "present": true
+          }
+        ]
+      },
+      "blockers": [],
+      "priorities": [
+        "market",
         "problem"
       ]
     },
