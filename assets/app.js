@@ -20,6 +20,11 @@ const els = {
   generatedAt: document.querySelector("#generatedAt"),
   exportButton: document.querySelector("#exportButton"),
   sidebarToggle: document.querySelector("#sidebarToggle"),
+  prototypeShowcase: document.querySelector("#completedDemos"),
+  prototypeGallery: document.querySelector("#prototypeGallery"),
+  prototypeGalleryCount: document.querySelector("#prototypeGalleryCount"),
+  focusPrototypes: document.querySelector("#focusPrototypes"),
+  togglePrototypeGallery: document.querySelector("#togglePrototypeGallery"),
   metrics: {
     projects: document.querySelector("#metricProjects"),
     software: document.querySelector("#metricSoftware"),
@@ -84,6 +89,17 @@ function publicProjects() {
   return state.dataset.projects.filter(isPublicProject);
 }
 
+function publicPrototypeProjects() {
+  return publicProjects()
+    .filter((project) => project.prototypeRepo)
+    .sort((a, b) => {
+      const featured = compareFeaturedDemo(a, b);
+      if (featured !== 0) return featured;
+      if (a.rocYear !== b.rocYear) return b.rocYear - a.rocYear;
+      return displayName(a).localeCompare(displayName(b), "zh-Hant");
+    });
+}
+
 function compareFeaturedDemo(a, b) {
   if (a.featuredDemo === b.featuredDemo) return 0;
   return a.featuredDemo ? -1 : 1;
@@ -123,6 +139,21 @@ function setupFilters() {
   els.sidebarToggle.addEventListener("click", () => {
     setSidebarExpanded(!document.body.classList.contains("filters-expanded"));
   });
+  els.focusPrototypes.addEventListener("click", () => {
+    els.search.value = "";
+    els.year.value = "all";
+    els.category.value = "all";
+    els.confidence.value = "all";
+    els.softwareOnly.checked = true;
+    els.prototypeOnly.checked = true;
+    render();
+    document.querySelector(".content-grid").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  els.togglePrototypeGallery.addEventListener("click", () => {
+    const collapsed = els.prototypeShowcase.classList.toggle("is-collapsed");
+    els.togglePrototypeGallery.setAttribute("aria-expanded", String(!collapsed));
+    els.togglePrototypeGallery.textContent = collapsed ? "展開全部 Demo" : "收合 Demo 目錄";
+  });
 }
 
 function filterProjects() {
@@ -161,6 +192,24 @@ function renderMetrics() {
   els.metrics.software.textContent = software.length;
   els.metrics.prototypes.textContent = prototypes.length;
   els.metrics.years.textContent = years.length;
+}
+
+function renderPrototypeGallery() {
+  const prototypes = publicPrototypeProjects();
+  els.prototypeGalleryCount.textContent = prototypes.length;
+  els.prototypeGallery.innerHTML = prototypes.map((project, index) => `
+    <article class="demo-tile">
+      <div class="demo-tile-number">${String(index + 1).padStart(2, "0")}</div>
+      <div class="demo-tile-body">
+        <span>${project.competitionName} · ${project.rocYear} 年</span>
+        <h4>${displayName(project)}</h4>
+        <div class="demo-tile-links">
+          <a class="demo-open-link" href="${demoLink(project)}" target="_blank" rel="noreferrer">開啟 Demo</a>
+          ${project.githubRepo ? `<a href="${project.githubRepo}" target="_blank" rel="noreferrer">GitHub</a>` : ""}
+        </div>
+      </div>
+    </article>
+  `).join("");
 }
 
 function renderCards() {
@@ -262,6 +311,7 @@ function render() {
     state.selectedId = state.filtered[0]?.id || null;
   }
   renderMetrics();
+  renderPrototypeGallery();
   renderCards();
   renderTable();
   renderDetail();
@@ -279,7 +329,7 @@ function exportFiltered() {
 }
 
 async function init() {
-  const response = await fetch("data/projects.json");
+  const response = await fetch("data/projects.json", { cache: "no-store" });
   state.dataset = await response.json();
   state.selectedId = publicProjects().find((project) => project.featuredDemo)?.id || null;
   const generated = new Date(state.dataset.generatedAt);

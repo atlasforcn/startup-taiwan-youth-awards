@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>台灣大學創業競賽作品整理系統</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css?v=20260626">
   </head>
   <body>
     <div class="app-shell">
@@ -133,6 +133,26 @@
           </article>
         </section>
 
+        <section class="prototype-showcase" id="completedDemos" aria-labelledby="completedDemosTitle">
+          <div class="prototype-showcase-head">
+            <div>
+              <p class="eyebrow">40 live prototypes</p>
+              <h3 id="completedDemosTitle">已完成 Demo，全部可以直接打開。</h3>
+              <p>這裡只列已發布的互動原型；每一項都提供 Demo 與 GitHub 原始碼入口。</p>
+            </div>
+            <div class="prototype-showcase-actions">
+              <button id="focusPrototypes" class="showcase-button primary" type="button">資料庫只看這 40 個</button>
+              <button id="togglePrototypeGallery" class="showcase-button" type="button" aria-expanded="true">收合 Demo 目錄</button>
+            </div>
+          </div>
+          <div class="prototype-showcase-summary">
+            <strong id="prototypeGalleryCount">0</strong>
+            <span>個正式公開 Demo</span>
+            <span class="showcase-proof">40 / 40 通過品質門檻 · 0 個阻斷項目</span>
+          </div>
+          <div id="prototypeGallery" class="demo-gallery" aria-live="polite"></div>
+        </section>
+
         <section class="notice-grid" aria-label="維護與免責聲明">
           <details class="notice-card disclaimer-card">
             <summary>
@@ -216,6 +236,6 @@
         </section>
       </main>
     </div>
-    <script src="assets/app.js"></script>
+    <script src="assets/app.js?v=20260626"></script>
   </body>
 </html>
