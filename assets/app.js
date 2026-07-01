@@ -1,5 +1,7 @@
 const state = {
   dataset: null,
+  audits: new Map(),
+  auditSummary: null,
   filtered: [],
   selectedId: null,
 };
@@ -25,6 +27,12 @@ const els = {
   prototypeGalleryCount: document.querySelector("#prototypeGalleryCount"),
   focusPrototypes: document.querySelector("#focusPrototypes"),
   togglePrototypeGallery: document.querySelector("#togglePrototypeGallery"),
+  auditAverage: document.querySelector("#auditAverage"),
+  auditLowest: document.querySelector("#auditLowest"),
+  auditPass: document.querySelector("#auditPass"),
+  auditBlockers: document.querySelector("#auditBlockers"),
+  priorityQueue: document.querySelector("#priorityQueue"),
+  auditLeaderboard: document.querySelector("#auditLeaderboard"),
   metrics: {
     projects: document.querySelector("#metricProjects"),
     software: document.querySelector("#metricSoftware"),
@@ -113,6 +121,46 @@ function sourceLabel(project) {
   return `${project.competitionName} ${project.rocYear} 年 ${project.round}`;
 }
 
+const priorityLabels = {
+  problem: "問題定義",
+  market: "市場切入",
+  interaction: "互動流程",
+  validation: "驗證證據",
+  business: "商業模式",
+  visual: "視覺呈現",
+  risk: "風險邊界",
+  quality: "品質檢查",
+};
+
+function auditFor(project) {
+  return state.audits.get(project.id) || null;
+}
+
+function scoreClass(score) {
+  if (score >= 95) return "score-excellent";
+  if (score >= 90) return "score-strong";
+  if (score >= 80) return "score-steady";
+  return "score-watch";
+}
+
+function scoreLabel(score) {
+  if (score >= 95) return "展示首選";
+  if (score >= 90) return "穩定可展示";
+  if (score >= 80) return "可展示，建議補強";
+  return "優先複查";
+}
+
+function priorityText(audit) {
+  if (!audit?.priorities?.length) return "暫無優先補強";
+  return audit.priorities.map((priority) => priorityLabels[priority] || priority).join("、");
+}
+
+function auditScoreBadge(project) {
+  const audit = auditFor(project);
+  if (!audit) return "";
+  return `<span class="score-pill ${scoreClass(audit.score)}">${audit.score} 分 · ${scoreLabel(audit.score)}</span>`;
+}
+
 function uniqueSorted(items) {
   return [...new Set(items.filter(Boolean))].sort((a, b) => String(b).localeCompare(String(a), "zh-Hant"));
 }
@@ -194,6 +242,58 @@ function renderMetrics() {
   els.metrics.years.textContent = years.length;
 }
 
+function auditedPrototypeProjects() {
+  return publicPrototypeProjects()
+    .map((project) => ({ project, audit: auditFor(project) }))
+    .filter((item) => item.audit);
+}
+
+function renderJudgeRow(item, rank, mode) {
+  const { project, audit } = item;
+  const actionLabel = mode === "leaderboard" ? "開啟展示" : "複查 Demo";
+  return `
+    <article class="judge-row">
+      <div class="judge-rank">${String(rank).padStart(2, "0")}</div>
+      <div class="judge-row-body">
+        <div class="judge-row-title">
+          <strong>${displayName(project)}</strong>
+          <span class="score-pill ${scoreClass(audit.score)}">${audit.score} 分</span>
+        </div>
+        <p>${priorityText(audit)}</p>
+        <div class="judge-row-links">
+          <a href="${demoLink(project)}" target="_blank" rel="noreferrer">${actionLabel}</a>
+          ${project.githubRepo ? `<a href="${project.githubRepo}" target="_blank" rel="noreferrer">GitHub</a>` : ""}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderAuditDashboard() {
+  const audited = auditedPrototypeProjects();
+  if (!state.auditSummary || !audited.length) {
+    els.auditAverage.textContent = "--";
+    els.auditLowest.textContent = "--";
+    els.auditPass.textContent = "--";
+    els.auditBlockers.textContent = "--";
+    els.priorityQueue.innerHTML = `<div class="no-results">尚未載入評審驗收資料。</div>`;
+    els.auditLeaderboard.innerHTML = `<div class="no-results">尚未載入評審驗收資料。</div>`;
+    return;
+  }
+
+  const scores = audited.map((item) => item.audit.score);
+  const lowest = Math.min(...scores);
+  const priorityQueue = [...audited].sort((a, b) => a.audit.score - b.audit.score).slice(0, 5);
+  const leaderboard = [...audited].sort((a, b) => b.audit.score - a.audit.score).slice(0, 5);
+
+  els.auditAverage.textContent = `${state.auditSummary.averageScore}`;
+  els.auditLowest.textContent = `${lowest}`;
+  els.auditPass.textContent = `${state.auditSummary.heuristicPass}/${state.auditSummary.audited}`;
+  els.auditBlockers.textContent = `${state.auditSummary.hasBlockers}`;
+  els.priorityQueue.innerHTML = priorityQueue.map((item, index) => renderJudgeRow(item, index + 1, "queue")).join("");
+  els.auditLeaderboard.innerHTML = leaderboard.map((item, index) => renderJudgeRow(item, index + 1, "leaderboard")).join("");
+}
+
 function renderPrototypeGallery() {
   const prototypes = publicPrototypeProjects();
   els.prototypeGalleryCount.textContent = prototypes.length;
@@ -203,6 +303,8 @@ function renderPrototypeGallery() {
       <div class="demo-tile-body">
         <span>${project.competitionName} · ${project.rocYear} 年</span>
         <h4>${displayName(project)}</h4>
+        ${auditScoreBadge(project)}
+        ${auditFor(project)?.priorities?.length ? `<p class="demo-priority">補強：${priorityText(auditFor(project))}</p>` : ""}
         <div class="demo-tile-links">
           <a class="demo-open-link" href="${demoLink(project)}" target="_blank" rel="noreferrer">開啟 Demo</a>
           ${project.githubRepo ? `<a href="${project.githubRepo}" target="_blank" rel="noreferrer">GitHub</a>` : ""}
@@ -226,6 +328,7 @@ function renderCards() {
       <div class="project-title">
         <strong>${displayName(project)}</strong>
         <span class="badge-stack">
+          ${auditScoreBadge(project)}
           <span class="badge ${prototypeClass(project)}">${prototypeStatus(project)}</span>
           <span class="badge ${confidenceClass(project.softwareConfidence)}">${project.softwareConfidence}</span>
         </span>
@@ -278,6 +381,7 @@ function renderDetail() {
     return;
   }
   state.selectedId = selected.id;
+  const selectedAudit = auditFor(selected);
 
   const prototype = selected.prototypeRepo
     ? `<div class="prototype-actions">
@@ -299,6 +403,8 @@ function renderDetail() {
       <div class="detail-item"><span>公司</span><strong>${selected.company || "待補"}</strong></div>
       <div class="detail-item"><span>獎補助</span><strong>${selected.awardAmountTenThousandNtd || "待查"} 萬元</strong></div>
       <div class="detail-item"><span>原型狀態</span><strong>${prototypeStatus(selected)}</strong></div>
+      ${selectedAudit ? `<div class="detail-item"><span>評審分數</span><strong>${selectedAudit.score} 分 · ${scoreLabel(selectedAudit.score)}</strong></div>` : ""}
+      ${selectedAudit ? `<div class="detail-item"><span>優先補強</span><strong>${priorityText(selectedAudit)}</strong></div>` : ""}
     </div>
     ${prototype}
     ${sourceLink(selected, "官方得獎名單")}
@@ -311,6 +417,7 @@ function render() {
     state.selectedId = state.filtered[0]?.id || null;
   }
   renderMetrics();
+  renderAuditDashboard();
   renderPrototypeGallery();
   renderCards();
   renderTable();
@@ -329,8 +436,18 @@ function exportFiltered() {
 }
 
 async function init() {
-  const response = await fetch("data/projects.json", { cache: "no-store" });
-  state.dataset = await response.json();
+  const projectsResponse = await fetch("data/projects.json", { cache: "no-store" });
+  state.dataset = await projectsResponse.json();
+  try {
+    const auditResponse = await fetch("data/demo-audit.json", { cache: "no-store" });
+    if (auditResponse.ok) {
+      const auditDataset = await auditResponse.json();
+      state.auditSummary = auditDataset.summary;
+      state.audits = new Map(auditDataset.audits.map((audit) => [audit.id, audit]));
+    }
+  } catch {
+    // The registry remains usable even if the judge audit file is temporarily unavailable.
+  }
   state.selectedId = publicProjects().find((project) => project.featuredDemo)?.id || null;
   const generated = new Date(state.dataset.generatedAt);
   els.generatedAt.textContent = `更新 ${generated.toLocaleDateString("zh-TW")}`;

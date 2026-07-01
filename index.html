@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>台灣大學創業競賽作品整理系統</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20260626">
+    <link rel="stylesheet" href="assets/styles.css?v=20260701">
   </head>
   <body>
     <div class="app-shell">
@@ -153,6 +153,48 @@
           <div id="prototypeGallery" class="demo-gallery" aria-live="polite"></div>
         </section>
 
+        <section class="judge-dashboard" aria-labelledby="judgeDashboardTitle">
+          <div class="judge-dashboard-main">
+            <p class="eyebrow">Judge quality radar</p>
+            <h3 id="judgeDashboardTitle">評審品質一眼看完，不用逐一打開 Demo 才能比較。</h3>
+            <p>把 40 個作品的驗收分數、阻斷項目與優先補強面向拉到主頁，方便快速決定要展示、複查或繼續優化哪一個。</p>
+          </div>
+          <div class="judge-stats" aria-label="評審驗收統計">
+            <article>
+              <span>平均分數</span>
+              <strong id="auditAverage">--</strong>
+            </article>
+            <article>
+              <span>最低分數</span>
+              <strong id="auditLowest">--</strong>
+            </article>
+            <article>
+              <span>通過驗收</span>
+              <strong id="auditPass">--</strong>
+            </article>
+            <article>
+              <span>阻斷項目</span>
+              <strong id="auditBlockers">--</strong>
+            </article>
+          </div>
+          <div class="judge-lists">
+            <div class="judge-list-card">
+              <div class="judge-list-head">
+                <span class="eyebrow">Priority queue</span>
+                <strong>下一輪最該補強</strong>
+              </div>
+              <div id="priorityQueue" class="judge-list"></div>
+            </div>
+            <div class="judge-list-card">
+              <div class="judge-list-head">
+                <span class="eyebrow">Best demos</span>
+                <strong>目前最適合展示</strong>
+              </div>
+              <div id="auditLeaderboard" class="judge-list"></div>
+            </div>
+          </div>
+        </section>
+
         <section class="notice-grid" aria-label="維護與免責聲明">
           <details class="notice-card disclaimer-card">
             <summary>
@@ -236,6 +278,6 @@
         </section>
       </main>
     </div>
-    <script src="assets/app.js?v=20260626"></script>
+    <script src="assets/app.js?v=20260701"></script>
   </body>
 </html>

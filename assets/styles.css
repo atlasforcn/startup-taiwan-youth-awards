@@ -566,6 +566,202 @@ body.filters-expanded .sidebar .toggle {
   border-radius: 6px;
 }
 
+.score-pill {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  padding: 5px 8px;
+  color: #15201c;
+  border: 1px solid rgba(21, 32, 28, 0.16);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.score-excellent {
+  background: #c8f06f;
+}
+
+.score-strong {
+  background: #dff1cf;
+}
+
+.score-steady {
+  background: #fff1b7;
+}
+
+.score-watch {
+  background: #ffd2be;
+}
+
+.badge-stack .score-pill {
+  font-size: 11px;
+}
+
+.demo-priority {
+  margin: -4px 0 14px;
+  color: #b7c7c0;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.judge-dashboard {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.88fr) minmax(420px, 1.12fr);
+  gap: 18px;
+  margin-bottom: 18px;
+  padding: 20px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(237, 246, 241, 0.92)),
+    repeating-linear-gradient(90deg, transparent 0, transparent 34px, rgba(29, 109, 85, 0.06) 34px, rgba(29, 109, 85, 0.06) 35px);
+  border: 1px solid var(--line);
+  border-left: 7px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.judge-dashboard-main {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.judge-dashboard-main h3 {
+  max-width: 620px;
+  margin: 0;
+  font-family: Georgia, "Noto Serif TC", serif;
+  font-size: clamp(25px, 3vw, 40px);
+  line-height: 1.08;
+}
+
+.judge-dashboard-main p:last-child {
+  max-width: 540px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.judge-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  align-self: start;
+}
+
+.judge-stats article {
+  min-height: 96px;
+  padding: 13px;
+  background: rgba(255, 253, 248, 0.95);
+  border: 1px solid rgba(30, 37, 39, 0.13);
+  border-radius: 8px;
+}
+
+.judge-stats span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.judge-stats strong {
+  display: block;
+  margin-top: 16px;
+  font-family: Georgia, "Noto Serif TC", serif;
+  font-size: 34px;
+  line-height: 1;
+}
+
+.judge-lists {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.judge-list-card {
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.judge-list-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: baseline;
+  padding: 13px 14px;
+  background: #edf5f1;
+  border-bottom: 1px solid var(--line);
+}
+
+.judge-list-head strong {
+  font-size: 15px;
+}
+
+.judge-list {
+  display: grid;
+}
+
+.judge-row {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(204, 216, 211, 0.72);
+}
+
+.judge-row:last-child {
+  border-bottom: 0;
+}
+
+.judge-rank {
+  color: var(--green);
+  font-family: Georgia, "Noto Serif TC", serif;
+  font-size: 20px;
+}
+
+.judge-row-body {
+  min-width: 0;
+}
+
+.judge-row-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.judge-row-title strong {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.judge-row p {
+  margin: 7px 0 9px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.judge-row-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.judge-row-links a {
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .notice-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -941,6 +1137,14 @@ td strong {
     grid-template-columns: 1fr 1fr;
   }
 
+  .judge-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .judge-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .prototype-showcase-head {
     align-items: flex-start;
     flex-direction: column;
@@ -968,7 +1172,8 @@ td strong {
   .content-grid,
   .notice-grid,
   .metrics,
-  .detail-list {
+  .detail-list,
+  .judge-lists {
     grid-template-columns: 1fr;
   }
 
@@ -978,6 +1183,18 @@ td strong {
 
   .prototype-showcase {
     padding: 19px;
+  }
+
+  .judge-dashboard {
+    padding: 16px;
+  }
+
+  .judge-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .judge-row-title {
+    flex-wrap: wrap;
   }
 
   .prototype-showcase-summary {
