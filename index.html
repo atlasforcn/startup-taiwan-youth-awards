@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>台灣大學創業競賽作品整理系統</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20260702">
+    <link rel="stylesheet" href="assets/styles.css?v=20260707a">
   </head>
   <body>
     <div class="app-shell">
@@ -22,7 +22,7 @@
 
         <label class="field">
           <span>搜尋</span>
-          <input id="searchInput" type="search" placeholder="團隊、公司、學校/場域、概念">
+          <input id="searchInput" type="search" placeholder="關鍵字、團隊、公司、學校、概念">
         </label>
 
         <label class="field">
@@ -107,11 +107,17 @@
 
       <main class="workspace">
         <section class="topbar">
-          <div>
+          <div class="topbar-copy">
             <p class="eyebrow">Taiwan youth startup competition atlas</p>
             <h2>把近五年大學創業競賽作品，整理成可以追蹤、篩選、原型化的資料庫。</h2>
           </div>
-          <div class="status-pill" id="generatedAt">資料讀取中</div>
+          <div class="topbar-actions">
+            <label class="quick-search">
+              <span>搜尋</span>
+              <input id="topSearchInput" type="search" placeholder="關鍵字、團隊、公司、學校、概念" autocomplete="off">
+            </label>
+            <div class="status-pill" id="generatedAt">資料讀取中</div>
+          </div>
         </section>
 
         <section class="metrics" aria-label="統計摘要">
@@ -278,6 +284,6 @@
         </section>
       </main>
     </div>
-    <script src="assets/app.js?v=20260702"></script>
+    <script src="assets/app.js?v=20260707a"></script>
   </body>
 </html>

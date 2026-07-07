@@ -3,6 +3,7 @@ const state = {
   audits: new Map(),
   auditSummary: null,
   filtered: [],
+  searchMeta: new Map(),
   selectedId: null,
 };
 
@@ -10,6 +11,7 @@ const sidebarStorageKey = "startup-awards-sidebar-expanded";
 
 const els = {
   search: document.querySelector("#searchInput"),
+  topSearch: document.querySelector("#topSearchInput"),
   year: document.querySelector("#yearFilter"),
   category: document.querySelector("#categoryFilter"),
   confidence: document.querySelector("#confidenceFilter"),
@@ -51,7 +53,8 @@ function setSidebarExpanded(expanded) {
 }
 
 function restoreSidebarState() {
-  setSidebarExpanded(readStorage(sidebarStorageKey) === "1");
+  const stored = readStorage(sidebarStorageKey);
+  setSidebarExpanded(stored === null ? true : stored === "1");
 }
 
 function readStorage(key) {
@@ -170,6 +173,270 @@ function sourceLink(project, label = "官方來源") {
   return `<a href="${project.sourceUrl}" target="_blank" rel="noreferrer">${label}</a>`;
 }
 
+function searchInputs() {
+  return [els.search, els.topSearch].filter(Boolean);
+}
+
+function currentSearchQuery() {
+  return searchInputs().find((input) => input.value)?.value || "";
+}
+
+function setSearchValue(value, source = null) {
+  searchInputs().forEach((input) => {
+    if (input !== source) input.value = value;
+  });
+}
+
+function handleSearchInput(event) {
+  setSearchValue(event.currentTarget.value, event.currentTarget);
+  render();
+}
+
+function projectKeywords(project) {
+  return Array.isArray(project.keywords) ? project.keywords : [];
+}
+
+const genericKeywordLabels = new Set([
+  "AI",
+  "資料分析",
+  "平台服務",
+  "健康醫療",
+  "智慧農業",
+  "永續循環",
+  "智慧交通",
+  "教育學習",
+  "文化體驗",
+  "運動科技",
+  "法律科技",
+  "寵物照護",
+  "無障礙",
+  "餐飲食材",
+  "職涯媒合",
+  "物聯網",
+  "生醫科技",
+  "社會創新",
+  "商務營運",
+  "創業歸故里",
+  "地方創生",
+  "FITI",
+  "科技創業",
+  "實戰模擬",
+  "校園募資",
+  "Healthy x Happy",
+  "健康幸福",
+  "Young 飛",
+  "青年行動",
+  "U-start",
+  "青年創業",
+  "U-start 原漾",
+  "原住民族創業",
+  "使用者補充",
+  "待查概念",
+  "已開原型",
+  "可軟體化",
+  "明確候選",
+  "推測候選",
+  "資料待查",
+  "競賽作品",
+  "創業競賽",
+  "專案資料",
+  "官方來源",
+  "作品庫",
+  "得獎團隊",
+  "實作候選",
+  "場域驗證",
+]);
+
+function isGenericKeyword(keyword) {
+  return genericKeywordLabels.has(keyword) || /^\d{3}年$/.test(keyword) || /^\d{4}$/.test(keyword);
+}
+
+function normalizeSearchText(value) {
+  return String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[’'`"]/g, "")
+    .replace(/[「」『』【】[\]{}]/g, " ")
+    .replace(/[\\/|,，.。:：;；!?！？()（）\-－—–+*#]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function compactSearchText(value) {
+  return normalizeSearchText(value).replace(/\s+/g, "");
+}
+
+function queryTerms(query) {
+  return normalizeSearchText(query).split(" ").filter(Boolean);
+}
+
+function weightedSearchFields(project) {
+  const keywordFields = projectKeywords(project).map((keyword) => ({
+    value: keyword,
+    weight: isGenericKeyword(keyword) ? 3.1 : 5.5,
+    fuzzy: !isGenericKeyword(keyword),
+  }));
+
+  return [
+    ...keywordFields,
+    { value: displayName(project), weight: 4.5, fuzzy: true },
+    { value: project.company, weight: 3.4, fuzzy: true },
+    { value: project.category, weight: 3, fuzzy: false },
+    { value: project.school, weight: 2.4, fuzzy: false },
+    { value: project.implementationConcept, weight: 2, fuzzy: false },
+    { value: project.competitionName, weight: 1.6, fuzzy: false },
+    { value: project.round, weight: 1.2, fuzzy: false },
+  ];
+}
+
+function levenshteinDistance(a, b) {
+  if (a === b) return 0;
+  if (!a.length) return b.length;
+  if (!b.length) return a.length;
+
+  const previous = Array.from({ length: b.length + 1 }, (_, index) => index);
+  const current = new Array(b.length + 1);
+
+  for (let i = 1; i <= a.length; i += 1) {
+    current[0] = i;
+    for (let j = 1; j <= b.length; j += 1) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      current[j] = Math.min(
+        current[j - 1] + 1,
+        previous[j] + 1,
+        previous[j - 1] + cost,
+      );
+    }
+    for (let j = 0; j <= b.length; j += 1) {
+      previous[j] = current[j];
+    }
+  }
+
+  return previous[b.length];
+}
+
+function similarity(a, b) {
+  const maxLength = Math.max(a.length, b.length);
+  if (!maxLength) return 1;
+  return 1 - (levenshteinDistance(a, b) / maxLength);
+}
+
+function fuzzyThreshold(term) {
+  if (term.length <= 2) return 0.98;
+  if (/^[a-z0-9.+-]+$/.test(term)) return term.length <= 4 ? 0.74 : 0.7;
+  return term.length <= 4 ? 0.66 : 0.72;
+}
+
+function bestWindowSimilarity(term, value) {
+  const target = compactSearchText(value);
+  if (!term || !target || term.length < 3 || target.length < 3) return 0;
+  if (target.includes(term)) return 1;
+  if (term.length > 32) return 0;
+
+  const lengths = [...new Set([term.length - 1, term.length, term.length + 1])]
+    .filter((length) => length >= 2 && length <= target.length);
+  let best = 0;
+
+  lengths.forEach((length) => {
+    for (let index = 0; index <= target.length - length; index += 1) {
+      const score = similarity(term, target.slice(index, index + length));
+      if (score > best) best = score;
+      if (best >= 1) return;
+    }
+  });
+
+  return best;
+}
+
+function scoreSearchField(term, field) {
+  const normalizedValue = normalizeSearchText(field.value);
+  const compactValue = normalizedValue.replace(/\s+/g, "");
+  const compactTerm = compactSearchText(term);
+  if (!normalizedValue || !compactTerm) return 0;
+
+  if (normalizedValue === term || compactValue === compactTerm) {
+    return 42 * field.weight;
+  }
+  if (normalizedValue.includes(term) || compactValue.includes(compactTerm)) {
+    return (26 + Math.min(compactTerm.length, 14)) * field.weight;
+  }
+  if (field.fuzzy === false) return 0;
+
+  const fuzzyScore = bestWindowSimilarity(compactTerm, field.value);
+  if (fuzzyScore >= fuzzyThreshold(compactTerm)) {
+    return fuzzyScore * 20 * field.weight;
+  }
+
+  return 0;
+}
+
+function keywordMatchesTerm(keyword, term) {
+  const normalizedKeyword = normalizeSearchText(keyword);
+  const compactKeyword = compactSearchText(keyword);
+  const compactTerm = compactSearchText(term);
+  if (!normalizedKeyword || !compactTerm) return false;
+  if (normalizedKeyword.includes(term) || compactKeyword.includes(compactTerm)) return true;
+  if (isGenericKeyword(keyword)) return false;
+  return bestWindowSimilarity(compactTerm, keyword) >= fuzzyThreshold(compactTerm);
+}
+
+function scoreProjectSearch(project, terms) {
+  if (!terms.length) return { matched: true, score: 0, keywords: [] };
+
+  let score = 0;
+  const matchedKeywords = new Set();
+
+  for (const term of terms) {
+    const bestScore = weightedSearchFields(project)
+      .reduce((best, field) => Math.max(best, scoreSearchField(term, field)), 0);
+
+    if (bestScore <= 0) {
+      return { matched: false, score: 0, keywords: [] };
+    }
+
+    score += bestScore;
+    projectKeywords(project)
+      .filter((keyword) => keywordMatchesTerm(keyword, term))
+      .forEach((keyword) => matchedKeywords.add(keyword));
+  }
+
+  return {
+    matched: true,
+    score: score + (matchedKeywords.size * 12),
+    keywords: [...matchedKeywords],
+  };
+}
+
+function compareSearchResults(a, b, hasQuery) {
+  if (hasQuery) {
+    const scoreDifference = (state.searchMeta.get(b.id)?.score || 0) - (state.searchMeta.get(a.id)?.score || 0);
+    if (scoreDifference !== 0) return scoreDifference;
+  }
+
+  const featured = compareFeaturedDemo(a, b);
+  if (featured !== 0) return featured;
+  if (hasQuery && a.rocYear !== b.rocYear) return b.rocYear - a.rocYear;
+  return 0;
+}
+
+function keywordsForDisplay(project, limit) {
+  const keywords = projectKeywords(project);
+  const matched = state.searchMeta.get(project.id)?.keywords || [];
+  return [...matched, ...keywords.filter((keyword) => !matched.includes(keyword))].slice(0, limit);
+}
+
+function renderKeywordChips(project, limit = 6) {
+  const keywords = keywordsForDisplay(project, limit);
+  if (!keywords.length) return "";
+
+  const matched = new Set(state.searchMeta.get(project.id)?.keywords || []);
+  return `
+    <div class="keyword-cloud" aria-label="關鍵字">
+      ${keywords.map((keyword) => `<span class="keyword-chip ${matched.has(keyword) ? "is-match" : ""}">${keyword}</span>`).join("")}
+    </div>
+  `;
+}
+
 function setupFilters() {
   const projects = publicProjects();
   const years = uniqueSorted(projects.map((p) => p.rocYear));
@@ -178,7 +445,15 @@ function setupFilters() {
   els.year.insertAdjacentHTML("beforeend", years.map((year) => `<option value="${year}">${year} 年</option>`).join(""));
   els.category.insertAdjacentHTML("beforeend", categories.map((category) => `<option value="${category}">${category}</option>`).join(""));
 
-  [els.search, els.year, els.category, els.confidence, els.softwareOnly, els.prototypeOnly].forEach((el) => {
+  searchInputs().forEach((el) => {
+    el.addEventListener("input", handleSearchInput);
+    el.addEventListener("search", handleSearchInput);
+    el.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") event.preventDefault();
+    });
+  });
+
+  [els.year, els.category, els.confidence, els.softwareOnly, els.prototypeOnly].forEach((el) => {
     el.addEventListener("input", render);
     el.addEventListener("change", render);
   });
@@ -188,7 +463,7 @@ function setupFilters() {
     setSidebarExpanded(!document.body.classList.contains("filters-expanded"));
   });
   els.focusPrototypes.addEventListener("click", () => {
-    els.search.value = "";
+    setSearchValue("");
     els.year.value = "all";
     els.category.value = "all";
     els.confidence.value = "all";
@@ -205,29 +480,26 @@ function setupFilters() {
 }
 
 function filterProjects() {
-  const query = els.search.value.trim().toLowerCase();
+  const terms = queryTerms(currentSearchQuery());
   const year = els.year.value;
   const category = els.category.value;
   const confidence = els.confidence.value;
   const softwareOnly = els.softwareOnly.checked;
   const prototypeOnly = els.prototypeOnly.checked;
+  state.searchMeta = new Map();
 
   return publicProjects().filter((project) => {
-    const haystack = [
-      displayName(project),
-      project.company,
-      project.school,
-      project.category,
-      project.implementationConcept,
-    ].join(" ").toLowerCase();
+    const searchResult = scoreProjectSearch(project, terms);
+    if (terms.length && !searchResult.matched) return false;
+    state.searchMeta.set(project.id, searchResult);
 
-    return (!query || haystack.includes(query))
+    return (!terms.length || searchResult.matched)
       && (year === "all" || String(project.rocYear) === year)
       && (category === "all" || project.category === category)
       && (confidence === "all" || project.softwareConfidence === confidence)
       && (!softwareOnly || project.softwareCandidate)
       && (!prototypeOnly || project.prototypeRepo);
-  }).sort(compareFeaturedDemo);
+  }).sort((a, b) => compareSearchResults(a, b, terms.length > 0));
 }
 
 function renderMetrics() {
@@ -316,7 +588,7 @@ function renderPrototypeGallery() {
 
 function renderCards() {
   const items = state.filtered.slice(0, 40);
-  els.resultCount.textContent = `${state.filtered.length} 筆`;
+  els.resultCount.textContent = `${state.filtered.length} 筆${queryTerms(currentSearchQuery()).length ? "相關" : ""}`;
 
   if (!items.length) {
     els.cards.innerHTML = `<div class="no-results">目前篩選沒有結果。</div>`;
@@ -336,6 +608,7 @@ function renderCards() {
       <div class="meta-line">${project.school} / ${project.category} / ${project.rocYear} 年</div>
       <div class="meta-line">來源：${sourceLabel(project)}</div>
       <p class="concept-line">${project.implementationConcept}</p>
+      ${renderKeywordChips(project, 5)}
     </button>
   `).join("");
 
@@ -397,6 +670,7 @@ function renderDetail() {
       <h4>${displayName(selected)}</h4>
     </div>
     <p class="concept-line">${selected.implementationConcept}</p>
+    ${renderKeywordChips(selected, 10)}
     <div class="detail-list">
       <div class="detail-item"><span>獎項來源</span><strong>${sourceLabel(selected)}</strong></div>
       <div class="detail-item"><span>學校/場域</span><strong>${selected.school}</strong></div>
